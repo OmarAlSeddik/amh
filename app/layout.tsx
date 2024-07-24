@@ -26,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("bg-background font-sans antialiase", fontSans.variable)}
+        className={cn(
+          "bg-background font-sans antialiase text-pretty",
+          fontSans.variable
+        )}
       >
         <Header />
         {children}
