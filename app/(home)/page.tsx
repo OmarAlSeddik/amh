@@ -5,7 +5,7 @@ import Hero from "./_components/Hero";
 import Quote from "./_components/Quote";
 import Classes from "./_components/Services";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <main>
       <Hero />
@@ -18,4 +18,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

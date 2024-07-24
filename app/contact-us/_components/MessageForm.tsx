@@ -9,7 +9,7 @@ import Image from "next/image";
 const MessageForm = () => {
   return (
     <section className="flex justify-center bg-[#191919] text-white">
-      <div className="flex flex-1 justify-center p-8 py-24">
+      <div className="flex flex-1 justify-center py-24">
         <div className="flex max-w-[40rem] flex-col gap-4">
           <h1 className="h1">Get in Touch</h1>
           <Separator className="h-px bg-white" />
@@ -46,7 +46,7 @@ const MessageForm = () => {
       </div>
       <Image
         src={MessageFormImage}
-        alt=""
+        alt="Message Form"
         className="hidden w-1/2 flex-1 object-cover lg:block"
       />
     </section>
