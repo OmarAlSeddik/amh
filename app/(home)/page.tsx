@@ -1,11 +1,11 @@
 import About from "./_components/About";
 import Benefits from "./_components/Benefits";
 import Blog from "./_components/Blog";
-import Classes from "./_components/Services";
 import Hero from "./_components/Hero";
 import Quote from "./_components/Quote";
+import Classes from "./_components/Services";
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <Hero />
@@ -16,4 +16,6 @@ export default function Home() {
       <Quote />
     </main>
   );
-}
+};
+
+export default Home;

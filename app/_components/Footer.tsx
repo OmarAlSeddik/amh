@@ -5,14 +5,14 @@ import Logo from "../../public/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
-      <div className="container flex flex-col items-center justify-between gap-4 py-12 md:flex-row">
+      <div className="container flex flex-col justify-between gap-4 py-12 sm:flex-row sm:items-center">
         <div className="flex flex-col items-center gap-2">
           <Image
             src={Logo}
             alt="AMH"
-            className="size-28 rounded-full md:size-40"
+            className="size-28 rounded-full sm:size-36"
           />
-          <p className="text-4xl">Join the Success!</p>
+          <p className="h3">Join the Success!</p>
           <Button
             variant="outline"
             className="w-40 bg-transparent text-white hover:bg-white"

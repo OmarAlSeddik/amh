@@ -21,8 +21,8 @@ const Header = () => {
         <Link href="/what-we-do" className="transition-all hover:text-primary">
           What We Do
         </Link>
-        <Link href="/contact" className="transition-all hover:text-primary">
-          Contact
+        <Link href="/contact-us" className="transition-all hover:text-primary">
+          Contact Us
         </Link>
       </nav>
     </header>

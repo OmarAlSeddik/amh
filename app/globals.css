@@ -85,12 +85,12 @@
   }
   /* Typography */
   .h1 {
-    @apply text-4xl md:text-5xl;
+    @apply text-4xl sm:text-5xl;
   }
   .h2 {
-    @apply text-3xl md:text-4xl;
+    @apply text-3xl sm:text-4xl;
   }
   .h3 {
-    @apply text-lg md:text-xl;
+    @apply text-xl sm:text-2xl;
   }
 }
