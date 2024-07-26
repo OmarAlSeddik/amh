@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import AhmadEzzAlDeenImage from "@/public/members/ahmad-ezz-al-deen.jpg";
-import AhmadMuhammadAbuAliImage from "@/public/members/ahmad-muhammad-abu-ali.jpg";
-import AhmadOthmanImage from "@/public/members/ahmad-othman.jpg";
-import AhmadRadwanMansiImage from "@/public/members/ahmad-radwan-mansi.jpg";
-import AmgadBahaAlDeenImage from "@/public/members/amgad-baha-al-deen.jpg";
-import AmrAlDabImage from "@/public/members/amr-al-dab.jpg";
-import AtefAlSharifImage from "@/public/members/atef-al-sharif.jpg";
-import HebaAlNashratyImage from "@/public/members/heba-al-nashraty.jpg";
-import HosniAlShamiImage from "@/public/members/hosni-al-shami.jpg";
-import KareemAlMarzoukyImage from "@/public/members/kareem-al-marzouky.jpg";
-import KhaledQendeelImage from "@/public/members/khaled-qendeel.jpg";
-import MuhammadShimeesImage from "@/public/members/muhammad-shimees.jpg";
-import ShaimaaBayoumiImage from "@/public/members/shaimaa-bayoumi.jpg";
-import TamerKaramImage from "@/public/members/tamer-karam.jpg";
+import AhmadEzzAlDeenImage from "@/public/members/ahmad-ezz-al-deen.webp";
+import AhmadMuhammadAbuAliImage from "@/public/members/ahmad-muhammad-abu-ali.webp";
+import AhmadOthmanImage from "@/public/members/ahmad-othman.webp";
+import AhmadRadwanMansiImage from "@/public/members/ahmad-radwan-mansi.webp";
+import AmgadBahaAlDeenImage from "@/public/members/amgad-baha-al-deen.webp";
+import AmrAlDabImage from "@/public/members/amr-al-dab.webp";
+import AtefAlSharifImage from "@/public/members/atef-al-sharif.webp";
+import HebaAlNashratyImage from "@/public/members/heba-al-nashraty.webp";
+import HosniAlShamiImage from "@/public/members/hosni-al-shami.webp";
+import KareemAlMarzoukyImage from "@/public/members/kareem-al-marzouky.webp";
+import KhaledQendeelImage from "@/public/members/khaled-qendeel.webp";
+import MuhammadShimeesImage from "@/public/members/muhammad-shimees.webp";
+import ShaimaaBayoumiImage from "@/public/members/shaimaa-bayoumi.webp";
+import TamerKaramImage from "@/public/members/tamer-karam.webp";
 import Image from "next/image";
 import Profile from "./Profile";
 
@@ -50,15 +50,20 @@ const OurTeam = () => {
             character to help users connect with your team.
           </p>
         </div>
-        <div className="grid gap-4 lg:grid-cols-2">
+        <div className="grid items-center justify-center gap-4 lg:grid-cols-2">
           {members.map((member) => (
-            <div key={member.name} className="flex bg-[#191919] text-white">
-              <Image
-                src={member.image}
-                alt={member.name}
-                className="size-48 object-cover"
-              />
-              <div className="flex flex-1 flex-col justify-between p-4">
+            <div
+              key={member.name}
+              className="flex flex-col bg-[#191919] text-white sm:flex-row"
+            >
+              <div className="flex w-full justify-center p-4 sm:w-auto sm:justify-start sm:p-0">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  className="size-48 object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col justify-between gap-2 p-4">
                 <small>Role</small>
                 <h3 className="text-lg">{member.name}</h3>
                 <div className="flex flex-col">

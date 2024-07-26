@@ -1,6 +1,6 @@
 const Innovative = () => {
   return (
-    <section className="bg-[url('../public/who-we-are/innovative-business-development.png')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
+    <section className="bg-[url('../public/who-we-are/innovative-business-development.webp')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
       <div className="container flex h-full flex-col gap-8 py-24 md:flex-row">
         <div className="flex flex-1 flex-col gap-8">
           <h2 className="h2">Innovative Business Development</h2>

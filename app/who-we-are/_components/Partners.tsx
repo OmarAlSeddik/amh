@@ -1,9 +1,9 @@
-import AgricalturalBankOfEgyptImage from "@/public/collaborators/agricaltural-bank-of-egypt.jpg";
-import HamdiShomanImage from "@/public/collaborators/hamdi-shoman.jpg";
-import IetosImage from "@/public/collaborators/ietos.jpg";
-import SurUniversityCollegeImage from "@/public/collaborators/sur-university-college.jpg";
-import UniversityCollegeOfGoizhaImage from "@/public/collaborators/university-college-of-goizha.jpg";
-import WatanShippingCompanyImage from "@/public/collaborators/watan-shipping-company.jpg";
+import AgricalturalBankOfEgyptImage from "@/public/collaborators/agricaltural-bank-of-egypt.webp";
+import HamdiShomanImage from "@/public/collaborators/hamdi-shoman.webp";
+import IetosImage from "@/public/collaborators/ietos.webp";
+import SurUniversityCollegeImage from "@/public/collaborators/sur-university-college.webp";
+import UniversityCollegeOfGoizhaImage from "@/public/collaborators/university-college-of-goizha.webp";
+import WatanShippingCompanyImage from "@/public/collaborators/watan-shipping-company.webp";
 
 import Image from "next/image";
 

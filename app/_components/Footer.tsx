@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Logo from "../../public/logo.png";
+import Link from "next/link";
+import Logo from "../../public/logo.webp";
 
 const Footer = () => {
   return (
@@ -13,12 +14,14 @@ const Footer = () => {
             className="size-28 rounded-full sm:size-36"
           />
           <p className="h3">Join the Success!</p>
-          <Button
-            variant="outline"
-            className="w-40 bg-transparent text-white hover:bg-white"
-          >
-            Contact Us
-          </Button>
+          <Link href="/contact-us">
+            <Button
+              variant="outline"
+              className="w-40 bg-transparent text-white hover:bg-white"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">

@@ -2,7 +2,7 @@ import { BookmarkCheck } from "lucide-react";
 
 const Services = () => {
   return (
-    <section className="bg-[url('../public/home/services.png')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
+    <section className="bg-[url('../public/home/services.webp')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
       <div className="container flex h-full flex-col items-center gap-4 py-24">
         <h2 className="h2">Our Services</h2>
         <p className="text-center">

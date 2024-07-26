@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const About = () => {
   return (
-    <section className="bg-[url('../public/home/about.png')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
+    <section className="bg-[url('../public/home/about.webp')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
       <div className="container flex h-full flex-col gap-64 py-24">
         <div className="flex flex-col gap-4 self-start">
           <h2 className="h2">
@@ -22,12 +23,14 @@ const About = () => {
             navigate challenges effectively. Partner with A.M.H. to elevate your
             business development efforts and achieve enduring success.
           </p>
-          <Button
-            variant="outline"
-            className="w-40 self-end bg-transparent text-white hover:bg-white"
-          >
-            Discover More
-          </Button>
+          <Link href="/what-we-do">
+            <Button
+              variant="outline"
+              className="w-40 self-end bg-transparent text-white hover:bg-white"
+            >
+              Discover More
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

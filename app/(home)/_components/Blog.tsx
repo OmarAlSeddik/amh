@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -16,12 +17,14 @@ const Blog = () => {
           </p>
         </div>
         <div>
-          <Button
-            variant="outline"
-            className="w-40 border-black bg-transparent hover:border-primary hover:bg-primary hover:text-white"
-          >
-            Explore More
-          </Button>
+          <Link href="/what-we-do">
+            <Button
+              variant="outline"
+              className="w-40 border-black bg-transparent hover:border-primary hover:bg-primary hover:text-white"
+            >
+              Explore More
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

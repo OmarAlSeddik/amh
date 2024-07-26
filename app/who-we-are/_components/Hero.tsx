@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import HeroImage from "@/public/who-we-are/hero.png";
+import HeroImage from "@/public/who-we-are/hero.webp";
 import Image from "next/image";
 
 const Hero = () => {
