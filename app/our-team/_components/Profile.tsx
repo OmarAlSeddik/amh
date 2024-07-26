@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { DialogClose } from "@/components/ui/dialog";
 import Image, { StaticImageData } from "next/image";
 
 const Profile = ({ name, image }: { name: string; image: StaticImageData }) => {
@@ -11,6 +13,11 @@ const Profile = ({ name, image }: { name: string; image: StaticImageData }) => {
           sapiente suscipit et cum iusto itaque praesentium obcaecati, minima
           quis quaerat minus neque facere autem magnam at expedita ea ex beatae?
         </p>
+        <DialogClose asChild>
+          <Button className="mt-auto w-40 bg-white hover:text-white">
+            Go Back
+          </Button>
+        </DialogClose>
       </div>
     </div>
   );

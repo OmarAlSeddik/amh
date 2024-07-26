@@ -1,4 +1,10 @@
-import { BookmarkCheck } from "lucide-react";
+import {
+  Database,
+  FlipHorizontal2,
+  HandHelping,
+  PersonStanding,
+  Radar,
+} from "lucide-react";
 
 const Approach = () => {
   return (
@@ -13,7 +19,7 @@ const Approach = () => {
         <div className="grid w-full justify-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8 text-white" />
+              <FlipHorizontal2 className="size-8 text-white" />
             </div>
             <h3 className="h3">Strategic Alignment</h3>
             <p className="text-sm">
@@ -26,7 +32,7 @@ const Approach = () => {
           </div>
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8 text-white" />
+              <PersonStanding className="size-8 text-white" />
             </div>
             <h3 className="h3">Customer-Centric Focus</h3>
             <p className="text-sm">
@@ -39,7 +45,7 @@ const Approach = () => {
           </div>
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8 text-white" />
+              <HandHelping className="size-8 text-white" />
             </div>
             <h3 className="h3">Relationship Cultivation</h3>
             <p className="text-sm">
@@ -53,7 +59,7 @@ const Approach = () => {
           </div>
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8 text-white" />
+              <Radar className="size-8 text-white" />
             </div>
             <h3 className="h3">Innovation and Adaptability</h3>
             <p className="text-sm">
@@ -67,7 +73,7 @@ const Approach = () => {
           </div>
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8 text-white" />
+              <Database className="size-8 text-white" />
             </div>
             <h3 className="h3">Data-Driven Decision Making</h3>
             <p className="text-sm">

@@ -19,13 +19,13 @@ import Profile from "./Profile";
 
 const OurTeam = () => {
   const members = [
+    { name: "Amr Al Dab", image: AmrAlDabImage },
+    { name: "Atef Al Sharif", image: AtefAlSharifImage },
     { name: "Ahmad Ezz Al Deen", image: AhmadEzzAlDeenImage },
     { name: "Ahmad Muhammad Abu Ali", image: AhmadMuhammadAbuAliImage },
     { name: "Ahmad Othman", image: AhmadOthmanImage },
     { name: "Ahmad Radwan Mansi", image: AhmadRadwanMansiImage },
     { name: "Amgad Baha Al Deen", image: AmgadBahaAlDeenImage },
-    { name: "Amr Al Dab", image: AmrAlDabImage },
-    { name: "Atef Al Sharif", image: AtefAlSharifImage },
     { name: "Heba Al Nashraty", image: HebaAlNashratyImage },
     { name: "Hosni Al Shami", image: HosniAlShamiImage },
     { name: "Kareem Al marzouky", image: KareemAlMarzoukyImage },

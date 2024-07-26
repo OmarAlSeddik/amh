@@ -1,4 +1,12 @@
-import { BookmarkCheck } from "lucide-react";
+import {
+  Award,
+  ChartCandlestick,
+  HandHelping,
+  HeartHandshake,
+  Network,
+  ShieldCheck,
+  SquareKanban,
+} from "lucide-react";
 
 const Benefits = () => {
   return (
@@ -15,7 +23,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
-            <BookmarkCheck className="size-8" />
+            <ShieldCheck className="size-8" />
           </div>
           <h3 className="h3">Proven Expertise</h3>
           <p>
@@ -28,7 +36,7 @@ const Benefits = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3">
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
-            <BookmarkCheck className="size-8" />
+            <SquareKanban className="size-8" />
           </div>
           <h3 className="h3">Tailored Strategies</h3>
           <p>
@@ -38,7 +46,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
-            <BookmarkCheck className="size-8" />
+            <Network className="size-8" />
           </div>
           <h3 className="h3">Network and Partnerships</h3>
           <p>
@@ -49,7 +57,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
-            <BookmarkCheck className="size-8" />
+            <ChartCandlestick className="size-8" />
           </div>
           <h3 className="h3">Market Insights</h3>
           <p>
@@ -59,7 +67,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
-            <BookmarkCheck className="size-8" />
+            <HandHelping className="size-8" />
           </div>
           <h3 className="h3">Focused Support</h3>
           <p>
@@ -70,7 +78,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
-            <BookmarkCheck className="size-8" />
+            <Award className="size-8" />
           </div>
           <h3 className="h3">Results-Oriented Approach</h3>
           <p>
@@ -80,7 +88,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
-            <BookmarkCheck className="size-8" />
+            <HeartHandshake className="size-8" />
           </div>
           <h3 className="h3">Professional Guidance</h3>
           <p>

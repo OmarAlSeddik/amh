@@ -1,4 +1,11 @@
-import { BookmarkCheck } from "lucide-react";
+import {
+  BadgePoundSterling,
+  Building2,
+  NotebookText,
+  SquareKanban,
+  Store,
+  Unlink,
+} from "lucide-react";
 
 const Services = () => {
   return (
@@ -18,37 +25,37 @@ const Services = () => {
           <div className="flex w-56 flex-col items-center justify-between gap-4 bg-[#191919] p-8 text-center text-white">
             <p>Corporate Governance Consultation</p>
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8" />
+              <Building2 className="size-8" />
             </div>
           </div>
           <div className="flex w-56 flex-col items-center justify-between gap-4 bg-[#191919] p-8 text-center text-white">
             <p>Operations Research Consultation</p>
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8" />
+              <NotebookText className="size-8" />
             </div>
           </div>
           <div className="flex w-56 flex-col items-center justify-between gap-4 bg-[#191919] p-8 text-center text-white">
             <p>Strategic Consultation</p>
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8" />
+              <SquareKanban className="size-8" />
             </div>
           </div>
           <div className="flex w-56 flex-col items-center justify-between gap-4 bg-[#191919] p-8 text-center text-white">
             <p>Corporate Finance Consultation</p>
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8" />
+              <BadgePoundSterling className="size-8" />
             </div>
           </div>
           <div className="flex w-56 flex-col items-center justify-between gap-4 bg-[#191919] p-8 text-center text-white">
             <p>Sales & Marketing Consultation</p>
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8" />
+              <Store className="size-8" />
             </div>
           </div>
           <div className="flex w-56 flex-col items-center justify-between gap-4 bg-[#191919] p-8 text-center text-white">
             <p>Supply Chain Consultation</p>
             <div className="rounded-full bg-primary p-2">
-              <BookmarkCheck className="size-8" />
+              <Unlink className="size-8" />
             </div>
           </div>
         </div>
