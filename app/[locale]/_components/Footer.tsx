@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
+import Logo from "@/public/logo.webp";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../public/logo.webp";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+  const locale = useLocale();
+
+  console.log(locale);
+
   return (
     <footer className="bg-black text-white">
       <div className="container flex flex-col justify-between gap-4 py-12 sm:flex-row sm:items-center">
@@ -13,8 +19,8 @@ const Footer = () => {
             alt="AMH"
             className="size-28 rounded-full sm:size-36"
           />
-          <p className="h3">Join the Success!</p>
-          <Link href="/contact-us">
+          <p className="h3">{t("message")}</p>
+          <Link href={`${locale}/contact-us`}>
             <Button
               variant="outline"
               className="w-40 bg-transparent text-white hover:bg-white"
@@ -25,13 +31,13 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
-            <span className="text-xl">Info</span>
+            <span className="text-xl">{t("contact")}</span>
             <span>+201003020521</span>
             <span>a.m.hbusinessdev@gmail.com</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-xl">Address</span>
-            <span>29 Block 3, First Sector ,Zahraa Al Maadi, Cairo</span>
+            <span className="text-xl">{t("address1")}</span>
+            <span>{t("address2")}</span>
           </div>
         </div>
       </div>

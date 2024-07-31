@@ -1,0 +1,65 @@
+{
+  "Home": {
+    "title1": "Welcome To A.M.H For",
+    "title2": "Business Development",
+    "subtitle": "Your destination for exceptional Business Development solutions",
+    "getStarted": "Get Started",
+    "subscribe": "Subscribe to Our Newsletter",
+    "enterEmail": "Enter your email address",
+    "subscribeButton": "Subscribe",
+    "thankYou": "Thank You for Subscribing!",
+
+    "aboutTitle1": "About A.M.H For",
+    "aboutTitle2": "Developments",
+    "aboutSubtitle": "Empowering Your Business To Success",
+    "aboutDescription": "At A.M.H., we are committed to empowering your business to thrive in today’s competitive landscape. Our strategic approach is designed to unlock your full potential and drive sustainable growth. With personalized strategies and expert guidance, we ensure that you have the tools and insights needed to seize opportunities and navigate challenges effectively. Partner with A.M.H. to elevate your business development efforts and achieve enduring success.",
+    "discoverMore": "Discover More",
+
+    "benefitsTitle1": "Why Choose",
+    "benefitsTitle2": "A.M.H",
+    "benefitsTitle3": "For Your",
+    "benefitsTitle4": "Business?",
+    "provenExpertise": "Proven Expertise",
+    "provenExpertiseDesc": "AMH has a strong track record in business development, demonstrated through successful client engagements and industry-specific knowledge.",
+    "tailoredStrategies": "Tailored Strategies",
+    "tailoredStrategiesDesc": "They offer customized solutions that address our specific business challenges and align with our strategic goals.",
+    "networkPartnerships": "Network and Partnerships",
+    "networkPartnershipsDesc": "AMH provides access to extensive networks and strategic partnerships, facilitating market expansion and growth opportunities.",
+    "marketInsights": "Market Insights",
+    "marketInsightsDesc": "Their deep understanding of market trends and competitive landscapes informs strategic decision-making and enhances market positioning.",
+    "focusedSupport": "Focused Support",
+    "focusedSupportDesc": "Partnering with AMH allows us to concentrate on core business operations while benefiting from specialized business development expertise.",
+    "resultsOriented": "Results-Oriented Approach",
+    "resultsOrientedDesc": "They deliver measurable results, supporting our aim to achieve sustainable growth and operational excellence.",
+    "professionalGuidance": "Professional Guidance",
+    "professionalGuidanceDesc": "AMH serves as a strategic advisor, guiding us through complex business environments and optimizing business performance.",
+
+    "blogTitle": "Insights & Resources",
+    "blogContent": "We combine insightful strategies with valuable resources to empower your business development journey. Our commitment lies in providing you with the essential tools and knowledge needed to navigate challenges, seize opportunities, and achieve sustainable growth. With our comprehensive expertise and dedicated support, we ensure every decision is backed by clarity and confidence.",
+    "blogAction": "Explore More",
+
+    "quote": "“Business development is the art of fostering growth through strategic insight, innovative thinking, and unwavering dedication. It’s about navigating opportunities with precision and seizing them with courage, ensuring every step forward is a testament to vision and resilience.”",
+
+    "servicesTitle": "Our Services",
+    "servicesDescription": "Explore the comprehensive suite of business development services offered at A.M.H. From strategic planning and market analysis to partnership cultivation and digital transformation, we provide holistic support to meet your varied business needs. Whether you’re expanding into new markets or enhancing operational efficiencies, A.M.H. delivers tailored solutions backed by expertise to propel your business forward.",
+    "corporateGovernance": "Corporate Governance Consultation",
+    "operationsResearch": "Operations Research Consultation",
+    "strategicConsultation": "Strategic Consultation",
+    "corporateFinance": "Corporate Finance Consultation",
+    "salesMarketing": "Sales & Marketing Consultation",
+    "supplyChain": "Supply Chain Consultation"
+  },
+  "Header": {
+    "home": "Home",
+    "whoWeAre": "Who We Are",
+    "ourTeam": "Our Team",
+    "whatWeDo": "What We Do",
+    "contactUs": "Contact Us"
+  },
+  "Footer": {
+    "message": "Join the Success!",
+    "contact": "Contact Info",
+    "address1": "address",
+    "address2": "29 Block 3, First Sector, Zahraa Al Maadi, Cairo"
+  }
+}

@@ -7,30 +7,30 @@ import {
   ShieldCheck,
   SquareKanban,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Benefits = () => {
+  const t = useTranslations("Home");
+
   return (
     <section>
       <div className="grid md:grid-cols-2">
         <div className="flex justify-center border p-16">
           <h2 className="h2">
-            Why Choose
+            {t("benefitsTitle1")}
             <br />
-            <span className="text-primary">A.M.H</span> For Your
+            <span className="text-primary">{t("benefitsTitle2")}</span>{" "}
+            {t("benefitsTitle3")}
             <br />
-            Business?
+            {t("benefitsTitle4")}
           </h2>
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
             <ShieldCheck className="size-8" />
           </div>
-          <h3 className="h3">Proven Expertise</h3>
-          <p>
-            AMH has a strong track record in business development, demonstrated
-            through successful client engagements and industry-specific
-            knowledge.
-          </p>
+          <h3 className="h3">{t("provenExpertise")}</h3>
+          <p>{t("provenExpertiseDesc")}</p>
         </div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3">
@@ -38,63 +38,43 @@ const Benefits = () => {
           <div className="rounded-full bg-primary p-2 text-white">
             <SquareKanban className="size-8" />
           </div>
-          <h3 className="h3">Tailored Strategies</h3>
-          <p>
-            They offer customized solutions that address our specific business
-            challenges and align with our strategic goals.
-          </p>
+          <h3 className="h3">{t("tailoredStrategies")}</h3>
+          <p>{t("tailoredStrategiesDesc")}</p>
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
             <Network className="size-8" />
           </div>
-          <h3 className="h3">Network and Partnerships</h3>
-          <p>
-            AMH provides access to extensive networks and strategic
-            partnerships, facilitating market expansion and growth
-            opportunities.
-          </p>
+          <h3 className="h3">{t("networkPartnerships")}</h3>
+          <p>{t("networkPartnershipsDesc")}</p>
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
             <ChartCandlestick className="size-8" />
           </div>
-          <h3 className="h3">Market Insights</h3>
-          <p>
-            Their deep understanding of market trends and competitive landscapes
-            informs strategic decision-making and enhances market positioning.
-          </p>
+          <h3 className="h3">{t("marketInsights")}</h3>
+          <p>{t("marketInsightsDesc")}</p>
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
             <HandHelping className="size-8" />
           </div>
-          <h3 className="h3">Focused Support</h3>
-          <p>
-            Partnering with AMH allows us to concentrate on core business
-            operations while benefiting from specialized business development
-            expertise
-          </p>
+          <h3 className="h3">{t("focusedSupport")}</h3>
+          <p>{t("focusedSupportDesc")}</p>
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
             <Award className="size-8" />
           </div>
-          <h3 className="h3">Results-Oriented Approach</h3>
-          <p>
-            They deliver measurable results, supporting our aim to achieve
-            sustainable growth and operational excellence
-          </p>
+          <h3 className="h3">{t("resultsOriented")}</h3>
+          <p>{t("resultsOrientedDesc")}</p>
         </div>
         <div className="flex flex-col items-center gap-4 border p-16">
           <div className="rounded-full bg-primary p-2 text-white">
             <HeartHandshake className="size-8" />
           </div>
-          <h3 className="h3">Professional Guidance</h3>
-          <p>
-            AMH serves as a strategic advisor, guiding us through complex
-            business environments and optimizing business performance.
-          </p>
+          <h3 className="h3">{t("professionalGuidance")}</h3>
+          <p>{t("professionalGuidanceDesc")}</p>
         </div>
       </div>
     </section>

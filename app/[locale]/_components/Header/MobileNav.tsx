@@ -6,9 +6,13 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Menu } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 const MobileNav = () => {
+  const t = useTranslations("Header");
+  const locale = useLocale();
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -16,22 +20,22 @@ const MobileNav = () => {
           <Menu />
         </Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className="overflow-hidden">
         <nav className="flex h-screen flex-col items-center justify-center gap-8 bg-black text-2xl text-white">
           <DialogClose asChild>
-            <Link href="/">Home</Link>
+            <Link href={`${locale}/`}>{t("home")}</Link>
           </DialogClose>
           <DialogClose asChild>
-            <Link href="/who-we-are">Who We Are</Link>
+            <Link href="/who-we-are">{t("whoWeAre")}</Link>
           </DialogClose>
           <DialogClose asChild>
-            <Link href="/our-team">Our Team</Link>
+            <Link href="/our-team">{t("ourTeam")}</Link>
           </DialogClose>
           <DialogClose asChild>
-            <Link href="/what-we-do">What We Do</Link>
+            <Link href="/what-we-do">{t("whatWeDo")}</Link>
           </DialogClose>
           <DialogClose asChild>
-            <Link href="/contact-us">Contact Us</Link>
+            <Link href="/contact-us">{t("contactUs")}</Link>
           </DialogClose>
         </nav>
       </DialogContent>
