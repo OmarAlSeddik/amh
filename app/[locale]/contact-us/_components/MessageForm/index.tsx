@@ -37,6 +37,8 @@ const MessageForm = () => {
 
   async function onSubmit(values: z.infer<typeof FormSchema>) {
     await startTransition(async () => {
+      setResponse("");
+
       const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: {
