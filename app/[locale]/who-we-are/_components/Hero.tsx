@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <section className="flex justify-center bg-[#191919] text-white">
-      <div className="flex flex-1 justify-center p-24">
+      <div className="flex flex-1 justify-center p-12 sm:p-24">
         <div className="flex max-w-[40rem] flex-col gap-4">
           <h1 className="h1">{t("heroTitle")}</h1>
           <Separator />

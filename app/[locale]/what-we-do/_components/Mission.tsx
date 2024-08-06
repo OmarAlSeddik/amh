@@ -10,7 +10,7 @@ const Mission = () => {
 
   return (
     <section className="flex justify-center bg-black text-center text-white">
-      <div className="flex flex-1 justify-center p-24">
+      <div className="flex flex-1 justify-center p-12 sm:p-24">
         <div className="flex max-w-[40rem] flex-col gap-4">
           <h1 className="h1">{t("missionTitle")}</h1>
           <h2 className="h2">{t("missionSubtitle")}</h2>

@@ -15,8 +15,6 @@ const LanguagePicker = () => {
   const locale = useLocale();
   const pathname = usePathname().split("/")[2];
 
-  console.log(pathname);
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="transition-all hover:text-primary">

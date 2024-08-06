@@ -12,7 +12,12 @@ const Header = () => {
   return (
     <header className="relative z-50 flex items-center justify-between bg-black px-8 py-4 text-white">
       <Link href={`/${locale}/`}>
-        <Image src={Logo} alt="AMH" className="size-20 rounded-full" priority />
+        <Image
+          src={Logo}
+          alt="AMH"
+          className="size-16 rounded-full sm:size-20"
+          priority
+        />
       </Link>
       <DesktopNav />
       <LanguagePicker />

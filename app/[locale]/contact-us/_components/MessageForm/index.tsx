@@ -8,13 +8,13 @@ import {
   FormLabel,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import MessageFormImage from "@/public/contact/message-form.webp";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Separator } from "@radix-ui/react-separator";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { FormSchema } from "./form-schema";
@@ -22,6 +22,7 @@ import { FormSchema } from "./form-schema";
 const MessageForm = () => {
   const t = useTranslations("Contact");
   const [response, setResponse] = useState("");
+  const [isPending, startTransition] = useTransition();
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -35,25 +36,29 @@ const MessageForm = () => {
   });
 
   async function onSubmit(values: z.infer<typeof FormSchema>) {
-    const response = await fetch("/api/sendEmail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        firstName: values.firstName,
-        lastName: values.lastName,
-        email: values.email,
-        phone: values.phone,
-        message: values.message,
-      }),
+    await startTransition(async () => {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName: values.firstName,
+          lastName: values.lastName,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResponse(t("emailSent"));
+      }
+
+      form.reset();
     });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResponse(t("emailSent"));
-    }
   }
 
   return (
@@ -78,6 +83,7 @@ const MessageForm = () => {
                       <Input
                         placeholder={t("firstNamePlaceholder")}
                         className="bg-transparent"
+                        disabled={isPending}
                         {...field}
                       />
                     </FormControl>
@@ -94,6 +100,7 @@ const MessageForm = () => {
                       <Input
                         placeholder={t("lastNamePlaceholder")}
                         className="bg-transparent"
+                        disabled={isPending}
                         {...field}
                       />
                     </FormControl>
@@ -112,6 +119,7 @@ const MessageForm = () => {
                       <Input
                         placeholder={t("emailPlaceholder")}
                         className="bg-transparent"
+                        disabled={isPending}
                         {...field}
                       />
                     </FormControl>
@@ -128,6 +136,7 @@ const MessageForm = () => {
                       <Input
                         placeholder={t("phonePlaceholder")}
                         className="bg-transparent"
+                        disabled={isPending}
                         {...field}
                       />
                     </FormControl>
@@ -146,6 +155,7 @@ const MessageForm = () => {
                       className="bg-transparent"
                       id="message"
                       placeholder={t("messagePlaceholder")}
+                      disabled={isPending}
                       {...field}
                     />
                   </FormControl>
@@ -153,7 +163,9 @@ const MessageForm = () => {
               )}
             />
             <div className="flex flex-col gap-2">
-              <SubmitButton className="w-32">{t("sendMessage")}</SubmitButton>
+              <SubmitButton isPending={isPending} className="w-32">
+                {t("sendMessage")}
+              </SubmitButton>
               <small className={response ? "text-green-500" : "hidden"}>
                 {t("messageReceived")}
               </small>
