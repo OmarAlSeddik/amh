@@ -23,88 +23,60 @@ const OurTeam = () => {
 
   const members = [
     {
-      name: "Amr Al Dab",
+      id: "AmrAlDab",
       image: AmrAlDabImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Atef Al Sharif",
+      id: "AtefAlSharif",
       image: AtefAlSharifImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Ahmad Ezz Al Deen",
+      id: "AhmadEzzAlDeen",
       image: AhmadEzzAlDeenImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Ahmad Muhammad Abu Ali",
+      id: "AhmadMuhammadAbuAli",
       image: AhmadMuhammadAbuAliImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Ahmad Othman",
+      id: "AhmadOthman",
       image: AhmadOthmanImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Ahmad Radwan Mansi",
+      id: "AhmadRadwanMansi",
       image: AhmadRadwanMansiImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Amgad Baha Al Deen",
+      id: "AmgadBahaAlDeen",
       image: AmgadBahaAlDeenImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Heba Al Nashraty",
+      id: "HebaAlNashraty",
       image: HebaAlNashratyImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Hosni Al Shami",
+      id: "HosniAlShami",
       image: HosniAlShamiImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Kareem Al marzouky",
+      id: "KareemAlMarzouky",
       image: KareemAlMarzoukyImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Khaled Qendeel",
+      id: "KhaledQendeel",
       image: KhaledQendeelImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Muhammad Shimees",
+      id: "MuhammadShimees",
       image: MuhammadShimeesImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Shaimaa Bayoumi",
+      id: "ShaimaaBayoumi",
       image: ShaimaaBayoumiImage,
-      title: "Professor",
-      content: ``,
     },
     {
-      name: "Tamer Karam",
+      id: "TamerKaram",
       image: TamerKaramImage,
-      title: "Professor",
-      content: ``,
     },
   ];
 
@@ -120,37 +92,33 @@ const OurTeam = () => {
         <div className="grid items-center justify-center gap-4 lg:grid-cols-2">
           {members.map((member) => (
             <div
-              key={member.name}
+              key={member.id}
               className="flex flex-col bg-[#191919] text-white sm:flex-row"
             >
               <div className="flex w-full justify-center p-4 sm:w-auto sm:justify-start sm:p-0">
                 <Image
                   src={member.image}
-                  alt={member.name}
+                  alt={t(`members.${member.id}.name`)}
                   className="size-48 object-cover"
                 />
               </div>
               <div className="flex flex-1 flex-col justify-between gap-2 p-4">
                 <div>
-                  <small>{member.title}</small>
-                  <h3 className="text-lg">{member.name}</h3>
-                </div>
-                <div className="flex flex-col">
-                  <small>info@mysite.com</small>
-                  <small>123-456-7890</small>
+                  <small>{t(`members.${member.id}.title`)}</small>
+                  <h3 className="text-lg">{t(`members.${member.id}.name`)}</h3>
                 </div>
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button className="w-48 bg-white text-black hover:text-white">
-                      View Profile
+                      {t("viewProfile")}
                     </Button>
                   </DialogTrigger>
                   <DialogContent>
                     <Profile
-                      name={member.name}
+                      name={t(`members.${member.id}.name`)}
                       image={member.image}
-                      title={member.title}
-                      content={member.content}
+                      title={t(`members.${member.id}.title`)}
+                      content={t(`members.${member.id}.content`)}
                     />
                   </DialogContent>
                 </Dialog>

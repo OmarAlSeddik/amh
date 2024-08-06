@@ -87,7 +87,15 @@
     "phoneNumber2": "Phone Number",
     "leaveUsAMessage": "Leave Us a Message",
     "sendMessage": "Send Message",
-    "messageReceived": "We've received your message!"
+    "messageReceived": "We've received your message!",
+
+    "firstNamePlaceholder": "e.g. John",
+    "lastNamePlaceholder": "e.g. Doe",
+    "emailPlaceholder": "e.g. john.doe@me.com",
+    "phonePlaceholder": "e.g. 123-456-7890",
+    "messagePlaceholder": "e.g. Hi, I'm interested in...",
+
+    "emailSent": "Email sent successfully!"
   },
   "WhatWeDo": {
     "goBack": "Go Back",
@@ -246,6 +254,95 @@
   },
   "OurTeam": {
     "title": "Our Team",
-    "subtitle": "Dedication. Expertise. Passion."
+    "subtitle": "Dedication. Expertise. Passion.",
+    "viewProfile": "View Profile",
+    "goBack": "Go Back",
+    "members": {
+      "AmrAlDab": {
+        "name": "Prof. Dr. Amr Al-Dab",
+        "title": "Dean of the Arab Academy for Administrative, Financial, and Banking Sciences",
+        "content": "Dr. Amr Al-Dab has over 20 years of experience in business and finance. He has served as a consultant for several international companies and is currently the head of A.M.H Business Development and the chairman of Himayun Real Estate Development. Dr. Amr also has an academic background, holding a Ph.D. in Law from the Faculty of Law and a Ph.D. in Economics from the Faculty of Economics and Political Science at Cairo University. He is a visiting professor at the University of Cambridge in England and many Arab universities."
+      },
+      "AtefAlSharif": {
+        "name": "Prof. Dr. Atef Al-Sharif",
+        "title": "Professor of Capital Markets and Investment",
+        "content": "Prof. Dr. Atef Al-Sharif holds a Ph.D. in Business Administration and is a professor of capital markets and investment at several Egyptian and Arab universities. He is the former chairman of the Egyptian Stock Exchange and serves on the board of directors for several financial institutions and companies. He is the chairman of Al-Sharif Financial and Legal Consulting Company and the founder and secretary-general of the Egyptian Investor Relations Association. Dr. Atef Al-Sharif's expertise spans over 25 years in understanding various economic sectors and their economic situations, developing business models for listing on the stock exchange, and the financial and legal procedures involved. He has extensive experience in the Arab region concerning finance, business, and stock exchanges."
+      },
+      "AhmadEzzAlDeen": {
+        "name": "Dr. Ahmad Ezz Al-Deen",
+        "title": "Director of Planning and Financial Analysis",
+        "content": "Dr. Ahmad Ezz Al-Deen heads the Planning and Financial Analysis Department at New Giza Real Estate Development Company. His primary responsibilities include providing full support to project leaders for quarterly business reviews, enterprise resource planning, and the annual operating plan. Dr. Ahmad is involved in valuations, business plans, and feasibility study consultations, offering feasibility studies for each project using internal models. He provides the company’s business plans and financial analysis in a timely manner to optimize cost and profitability and enhance the company's strategic impact. Additionally, he develops key performance indicators to monitor the performance of various operational units and track progress. Dr. Ahmad acts as a business partner for the organization, aligning financial goals with strategic direction, participating in periodic business model testing and review, and creating Power BI and PowerPoint presentations for use in financial budget forecasts and investment decision-making. Dr. Ahmad Ezz is a financial expert with a Ph.D. in Financial Management and has held teaching positions at prestigious international and local academic institutions."
+      },
+      "AhmadMuhammadAbuAli": {
+        "name": "Ahmad Muhammad Abu Ali",
+        "title": "Financial Director and Project Manager",
+        "content": "With over 25 years of experience in guiding and improving the financial operations of major local and international companies, Ahmad Muhammad Abu Ali has demonstrated the ability to increase profitability and reduce losses for assigned projects. He has developed and implemented automated financial systems, improved business processes, and coordinated audits, liaising with external auditors and company staff. His experience includes developing business plans to maximize shareholder value, enhancing the quality of business analysis, improving the value of business models, demonstrating strong interpersonal and communication skills, and exhibiting exceptional problem-solving abilities while maintaining a high degree of integrity, reliability, and result orientation."
+      },
+      "AhmadOthman": {
+        "name": "Dr. Eng. Ahmad Othman",
+        "title": "Director of Project Development",
+        "content": "Dr. Ahmad Othman has 18 years of experience in engineering and development, with a strong background in design, engineering, management, and leadership. Throughout his career, he has held managerial positions for several major projects. His expertise includes developing visions, managing project designs, leading teams, estimating costs, writing requests for proposals, and presenting business plans. He is distinguished by his ability to provide a structured framework for turning complex situations into strategic opportunities. Dr. Ahmad is a certified project manager and excels at maximizing the value of required designs while controlling resources and available budgets, considering sustainability and safety for humans and the environment, risk management, and enhancing the engineering value of the project."
+      },
+      "AhmadRadwanMansi": {
+        "name": "Dr. Ahmad Radwan Mansi",
+        "title": "Finance and Capital Markets Expert",
+        "content": "Dr. Ahmad Radwan Mansi has 26 years of experience at Bank of Alexandria Intesa Sanpaolo, bringing diverse expertise in accounting, credit, finance, and investment. His expertise includes accounts, credit, letters of guarantee, corporate finance, feasibility studies, capital markets, and mutual funds. Additionally, he has experience in financial services by analyzing the performance of the Egyptian stock market and listed stocks, preparing daily, weekly, monthly, and quarterly technical analysis reports, and experience in construction and real estate valuation through preparing financial statements and bookkeeping, calculating construction progress rates and revenue realization, and evaluating commercial properties developed by cooperatives. Dr. Ahmad is a lecturer and trainer in finance and capital markets at various universities and academies. He is also a member of the evaluation team at the 'Economic Group for Financial Consulting and Securities,' as well as a financial statement analysis expert and listed company expert in Egyptian economic courts and a certified real estate appraiser No. 250 in the Financial Regulatory Authority’s register."
+      },
+      "AmgadBahaAlDeen": {
+        "name": "Dr. Amgad Baha Al-Deen",
+        "title": "Human Resources Management and Development Expert",
+        "content": "Dr. Amgad Baha Al-Deen is an expert in human resources management and development with a professional doctorate in Business Administration from the Arab Academy for Science, Technology and Maritime Transport. He works as a lecturer and certified trainer at several government and private universities and academies. Dr. Amgad's expertise focuses on human resources management and development in many local and international companies by developing HR management strategies, overseeing training and organizational development, recruitment and selection, employee relations, promotions, retention, and developing compensation and benefits structures to maximize the value of human resources in the organization."
+      },
+      "HebaAlNashraty": {
+        "name": "Dr. Heba Al-Nashraty",
+        "title": "Chief Strategy and Operations Officer",
+        "content": "Dr. Heba Al-Nashraty is an experienced economist with a Ph.D. in Economics and a diverse background in industrial development. She has worked in various sectors, including government, international organizations, and companies. Currently, she is the Chief Strategy and Operations Officer and Acting CEO of the Egypt Investment and Export Development Corporation (MIED), where she co-designs MIED's strategy with a team of consultants. Previously, she served as the Executive Director of the Upper Egypt Local Development Program Implementation Unit at the Industrial Development Authority of the Ministry of Trade and Industry, where she managed a $1 billion joint program between the World Bank and the Egyptian government to improve infrastructure and enhance the business environment and economic competitiveness to develop the private sector in Upper Egypt. She also designed and operated inclusive business models for industrial zones, measured and oversaw best practices for region development and management."
+      },
+      "HosniAlShami": {
+        "name": "Dr. Hosni Al-Shami",
+        "title": "Director of Occupational Health, Safety, and Environment",
+        "content": "Dr. Hosni Al-Shami is an expert and consultant with 20 years of experience in occupational health, safety, and quality assurance. He is currently the Director of Occupational Health, Safety, and Environment at El Sewedy Electric Group. Dr. Hosni holds a Ph.D. in Health Sciences, with his dissertation focusing on a comparative study of occupational safety and health levels between oil and gas companies and cement companies. His professional experience includes designing, implementing, and developing occupational health, safety, and environmental management systems, risk management, providing employee training programs to improve occupational health, safety, and environmental standards, conducting environmental analysis and inspections, and advising companies on developing occupational health, safety, and environmental standards. Dr. Hosni Al-Shami also serves as an expert and consultant in occupational health, safety, and environmental management for several local and international companies and organizations."
+      },
+      "ShereenAhmed": {
+        "name": "Dr. Shereen Ahmed",
+        "title": "Human Resources Management Expert",
+        "content": "Dr. Shereen Ahmed holds a Ph.D. in Business Administration from Cairo University and is an expert in human resources management. She has worked with many international and local organizations and companies, providing consultancy to a wide range of companies in strategic management, organizational development, performance management, talent management, and training and development. Dr. Shereen is distinguished by her extensive experience in designing and implementing training programs to develop leaders and employees' skills, developing strategies to improve organizational performance, and enhancing the effectiveness of work teams. Currently, she works as a university professor and lecturer in human resources management and organizational development."
+      },
+      "KamalEbrahim": {
+        "name": "Dr. Kamal Ebrahim",
+        "title": "Financial Risk Manager",
+        "content": "Dr. Kamal Ebrahim is an expert in financial risk management with over 30 years of experience. He holds a Ph.D. in Business Administration from Cairo University. He currently works as a financial risk manager at a major bank, where he evaluates and manages the financial risks facing the bank and provides strategies to minimize risks and increase profitability. His experience also includes internal audit, financial planning and analysis, developing risk management models, credit risk assessment, and developing business continuity plans. Dr. Kamal is also a lecturer and trainer in finance and risk management at several universities and institutes."
+      },
+      "MuhammadAlJamal": {
+        "name": "Dr. Muhammad Al-Jamal",
+        "title": "Corporate Governance and Social Responsibility Expert",
+        "content": "Dr. Muhammad Al-Jamal has over 20 years of experience in corporate governance and social responsibility. He holds a Ph.D. in Business Administration and works as a consultant for many companies in the field of governance and corporate social responsibility. Dr. Muhammad Al-Jamal's expertise includes establishing governance and corporate social responsibility frameworks, developing transparency and accountability systems, advising companies on social responsibility policies, and developing corporate sustainability reports. He is also a lecturer and trainer in governance and corporate social responsibility at several universities and institutes."
+      },
+      "KareemAlMarzouky": {
+        "name": "Kareem Al marzouky (To be updated)",
+        "title": "Professor (To be updated)",
+        "content": "(To be updated)"
+      },
+      "KhaledQendeel": {
+        "name": "Dr. Khaled Qendeel",
+        "title": "Investment Director",
+        "content": "Dr. Khaled Qendeel is a professional banker with 20 years of experience in banking and investment fields, including 3 years as the Chairman of the Investment Committee of the Private Insurance Fund at the National Bank of Egypt. He currently serves as the Head of Investment and Secretary of the Investment Committee at the Egyptian Arab Land Bank and is a board member at October Development and Real Estate Investment Company and the National Company for Real Estate Investment. He is also a former board member of the South Sinai Coast Investment and Tourism Company. Dr. Khaled's expertise lies in establishing and managing investment allocations and making final investment decisions for the National Bank's strategic and commercial portfolios in the capital market, covering sectors such as financial services, real estate, construction and building materials, household products, and healthcare."
+      },
+      "MuhammadShimees": {
+        "name": "Dr. Muhammad Shimees",
+        "title": "Professional Master's Program Director",
+        "content": "Dr. Muhammad Shimees has a decade of experience in providing management consulting services, participating in management consulting and training programs in the fields of restructuring, institutional development, and human resource development for several companies and institutions at the local and regional levels. Academically, Dr. Muhammad Shimees holds a Ph.D. and serves as an assistant professor and director of the Professional Master's Program at the Arab Academy for Administrative, Financial, and Banking Sciences, in addition to being a lecturer at several public and private universities."
+      },
+      "ShaimaaBayoumi": {
+        "name": "Dr. Shaimaa Bayoumi",
+        "title": "General Manager of Dispute Resolution and External Affairs",
+        "content": "Dr. Shaimaa Bayoumi is an experienced negotiator who has successfully negotiated numerous agreements resulting in win-win situations. She has gained the respect and trust of governments and other stakeholders as a trusted leader and mediator to achieve consensus among all concerned parties. She has contributed to preparing Egypt's negotiation positions in various areas of the WTO package and bilateral and regional trade agreements. Dr. Shaimaa currently serves as the General Manager of Dispute Resolution and External Affairs at the Ministry of Investment and International Trade and is also a lecturer at the Arab Academy for Administrative, Financial, and Banking Sciences. She holds a Bachelor's degree in Economics and Political Science from Cairo University, a Bachelor's degree in Law from Cairo University, an MBA in International Business and Markets from the Arab Academy for Science, Technology, and Maritime Transport, an LLM in International and Comparative Law from the American University in Cairo, and a Ph.D. in Business Administration from the Arab Academy for Administrative, Financial, and Banking Sciences. Her expertise spans economics, law, international trade, trade agreements, trade remedies, and dispute resolution."
+      },
+      "TamerKaram": {
+        "name": "Dr. Tamer Karam",
+        "title": "Consultant | Lecturer | Speaker",
+        "content": "Dr. Tamer Karam's expertise lies in marketing, having served as the Marketing and Business Development Manager at several local, regional, and international companies. His efforts have centered on formulating and overseeing strategies for entering various markets, preparing budget models, revenue and volume forecasts for business units, and developing strategies and promotional campaigns for commercial marketing to enhance sales and promote new products. He also identified areas for improvement in retail in various countries. Dr. Tamer Karam is an assistant professor of business administration, having held teaching positions at prestigious international and local academic institutions, including the American University in Cairo, the Arab Academy for Administrative, Financial, and Banking Sciences, California Metropolitan University, and Nottingham University. He holds a Ph.D. from Nottingham Trent University and is also a certified trainer from the American University in Cairo."
+      }
+    }
   }
 }

@@ -10,7 +10,7 @@ const Header = () => {
   const locale = useLocale();
 
   return (
-    <header className="flex items-center justify-between bg-black px-8 py-4 text-white">
+    <header className="relative z-50 flex items-center justify-between bg-black px-8 py-4 text-white">
       <Link href={`/${locale}/`}>
         <Image src={Logo} alt="AMH" className="size-20 rounded-full" priority />
       </Link>

@@ -1,7 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
-import LogoImage from "@/public/logo.webp";
+import CorporateFinanceImage from "@/public/what-we-do/corporate-finance-consultation.webp";
+import CorporateGovernanceImage from "@/public/what-we-do/corporate-governance.webp";
+import DigitalTransformationImage from "@/public/what-we-do/digital-transformation.webp";
+import HumanResourcesImage from "@/public/what-we-do/human-resources-management.webp";
+import OperationsResearchImage from "@/public/what-we-do/operations-research-consultation.webp";
+import SafetyAndHealthImage from "@/public/what-we-do/safety-and-health-management.webp";
+import SalesAndMarketingImage from "@/public/what-we-do/sales-and-marketing.webp";
+import StrategicConsultationImage from "@/public/what-we-do/strategic-consultation.webp";
+import SupplyChainImage from "@/public/what-we-do/supply-chain-management.webp";
+import TrainingAndDevelopmentImage from "@/public/what-we-do/training-and-development-consultation.webp";
+
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Field from "./Field";
@@ -12,7 +22,7 @@ const Fields = () => {
   const fields = [
     {
       name: t("trainingAndDevelopment"),
-      image: LogoImage,
+      image: TrainingAndDevelopmentImage,
       content: (
         <>
           <ul className="list-disc">
@@ -34,7 +44,7 @@ const Fields = () => {
     },
     {
       name: t("strategicConsultation"),
-      image: LogoImage,
+      image: StrategicConsultationImage,
       content: (
         <>
           <ul className="list-disc">
@@ -49,7 +59,7 @@ const Fields = () => {
     },
     {
       name: t("operationsResearch"),
-      image: LogoImage,
+      image: OperationsResearchImage,
       content: (
         <>
           <p>{t("operationsResearchContent1")}</p>
@@ -65,7 +75,7 @@ const Fields = () => {
     },
     {
       name: t("corporateFinance"),
-      image: LogoImage,
+      image: CorporateFinanceImage,
       content: (
         <>
           <p>{t("corporateFinanceContent1")}</p>
@@ -84,7 +94,7 @@ const Fields = () => {
     },
     {
       name: t("supplyChain"),
-      image: LogoImage,
+      image: SupplyChainImage,
       content: (
         <>
           <p>{t("supplyChainContent1")}</p>
@@ -101,7 +111,7 @@ const Fields = () => {
     },
     {
       name: t("corporateGovernance"),
-      image: LogoImage,
+      image: CorporateGovernanceImage,
       content: (
         <>
           <p>{t("corporateGovernanceContent1")}</p>
@@ -140,7 +150,7 @@ const Fields = () => {
     },
     {
       name: t("humanResources"),
-      image: LogoImage,
+      image: HumanResourcesImage,
       content: (
         <>
           <p>{t("humanResourcesContent1")}</p>
@@ -161,7 +171,7 @@ const Fields = () => {
     },
     {
       name: t("digitalTransformation"),
-      image: LogoImage,
+      image: DigitalTransformationImage,
       content: (
         <>
           <ul className="list-disc">
@@ -186,7 +196,7 @@ const Fields = () => {
     },
     {
       name: t("salesAndMarketing"),
-      image: LogoImage,
+      image: SalesAndMarketingImage,
       content: (
         <>
           <ul className="list-disc">
@@ -208,7 +218,7 @@ const Fields = () => {
     },
     {
       name: t("safetyAndHealth"),
-      image: LogoImage,
+      image: SafetyAndHealthImage,
       content: (
         <>
           <p>{t("safetyAndHealthContent1")}</p>
