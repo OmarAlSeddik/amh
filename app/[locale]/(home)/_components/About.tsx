@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 const About = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
 
   return (
     <section className="bg-[url('../public/home/about.webp')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
@@ -18,7 +19,7 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-8 self-end">
           <p>{t("aboutDescription")}</p>
-          <Link href="/what-we-do">
+          <Link href={`/${locale}/what-we-do`}>
             <Button
               variant="outline"
               className="w-40 self-end bg-transparent text-white hover:bg-white"

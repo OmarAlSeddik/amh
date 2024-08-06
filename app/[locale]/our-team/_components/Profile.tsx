@@ -2,17 +2,26 @@ import { Button } from "@/components/ui/button";
 import { DialogClose } from "@/components/ui/dialog";
 import Image, { StaticImageData } from "next/image";
 
-const Profile = ({ name, image }: { name: string; image: StaticImageData }) => {
+const Profile = ({
+  name,
+  image,
+  title,
+  content,
+}: {
+  name: string;
+  image: StaticImageData;
+  title: string;
+  content: string;
+}) => {
   return (
     <div className="flex flex-col gap-8 bg-black px-10 py-20 text-white sm:flex-row">
       <Image src={image} alt={name} className="size-64 rounded object-cover" />
       <div className="flex flex-1 flex-col gap-4">
-        <h3 className="h3">{name}</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          sapiente suscipit et cum iusto itaque praesentium obcaecati, minima
-          quis quaerat minus neque facere autem magnam at expedita ea ex beatae?
-        </p>
+        <div>
+          <p>{title}</p>
+          <h3 className="h3">{name}</h3>
+        </div>
+        <p>{content}</p>
         <DialogClose asChild>
           <Button className="mt-auto w-40 bg-white hover:text-white">
             Go Back

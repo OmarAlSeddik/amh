@@ -5,85 +5,55 @@ import {
   PersonStanding,
   Radar,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Approach = () => {
+  const t = useTranslations("WhoWeAre");
+
   return (
     <section>
       <div className="flex flex-col items-center gap-16 pt-24">
         <div className="flex flex-col gap-4">
           <h2 className="h2 text-center">
-            Our Business Development Principles
+            {t("businessDevelopmentPrinciples")}
           </h2>
-          <h3 className="h3 text-center">Setting above the Standard</h3>
+          <h3 className="h3 text-center">{t("settingAboveTheStandard")}</h3>
         </div>
         <div className="grid w-full justify-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
               <FlipHorizontal2 className="size-8 text-white" />
             </div>
-            <h3 className="h3">Strategic Alignment</h3>
-            <p className="text-sm">
-              A.M.H. prioritizes strategic alignment by ensuring every business
-              development initiative directly supports our long-term goals and
-              enhances our competitive edge. This approach allows us to focus
-              resources effectively, capitalize on market opportunities, and
-              navigate challenges with clarity and purpose.
-            </p>
+            <h3 className="h3">{t("strategicAlignment")}</h3>
+            <p className="text-sm">{t("strategicAlignmentDesc")}</p>
           </div>
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
               <PersonStanding className="size-8 text-white" />
             </div>
-            <h3 className="h3">Customer-Centric Focus</h3>
-            <p className="text-sm">
-              At A.M.H., understanding and meeting client needs is paramount. We
-              actively engage with clients to gain deep insights into their
-              challenges and goals. By tailoring our solutions and services
-              accordingly, we foster strong client relationships built on trust,
-              satisfaction, and a commitment to delivering meaningful value.
-            </p>
+            <h3 className="h3">{t("customerCentricFocus")}</h3>
+            <p className="text-sm">{t("customerCentricFocusDesc")}</p>
           </div>
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
               <HandHelping className="size-8 text-white" />
             </div>
-            <h3 className="h3">Relationship Cultivation</h3>
-            <p className="text-sm">
-              We place significant emphasis on cultivating and nurturing
-              relationships with clients, partners, and stakeholders. By
-              fostering open communication, collaboration, and mutual respect,
-              we create opportunities for strategic alliances and synergies.
-              These partnerships not only expand our reach but also enrich our
-              capabilities and industry insights
-            </p>
+            <h3 className="h3">{t("relationshipCultivation")}</h3>
+            <p className="text-sm">{t("relationshipCultivationDesc")}</p>
           </div>
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
               <Radar className="size-8 text-white" />
             </div>
-            <h3 className="h3">Innovation and Adaptability</h3>
-            <p className="text-sm">
-              A.M.H. embraces innovation as a catalyst for growth and
-              differentiation. We encourage a culture of creativity and
-              continuous improvement, leveraging emerging technologies and
-              industry trends to stay ahead. Our adaptable approach enables us
-              to respond swiftly to market shifts, seize new opportunities, and
-              maintain relevance in a competitive landscape
-            </p>
+            <h3 className="h3">{t("innovationAndAdaptability")}</h3>
+            <p className="text-sm">{t("innovationAndAdaptabilityDesc")}</p>
           </div>
           <div className="flex flex-col items-center gap-4 border-y px-4 py-8 sm:border">
             <div className="rounded-full bg-primary p-2">
               <Database className="size-8 text-white" />
             </div>
-            <h3 className="h3">Data-Driven Decision Making</h3>
-            <p className="text-sm">
-              Data is integral to A.M.H.&apos;s decision-making process. We
-              harness data analytics and market intelligence to inform strategic
-              choices, optimize performance, and mitigate risks. By leveraging
-              actionable insights, we enhance our ability to forecast trends,
-              measure success, and refine our business development strategies
-              for sustained growth and profitability.
-            </p>
+            <h3 className="h3">{t("dataDrivenDecisionMaking")}</h3>
+            <p className="text-sm">{t("dataDrivenDecisionMakingDesc")}</p>
           </div>
         </div>
       </div>

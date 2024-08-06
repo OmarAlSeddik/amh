@@ -14,25 +14,98 @@ import KhaledQendeelImage from "@/public/members/khaled-qendeel.webp";
 import MuhammadShimeesImage from "@/public/members/muhammad-shimees.webp";
 import ShaimaaBayoumiImage from "@/public/members/shaimaa-bayoumi.webp";
 import TamerKaramImage from "@/public/members/tamer-karam.webp";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Profile from "./Profile";
 
 const OurTeam = () => {
+  const t = useTranslations("OurTeam");
+
   const members = [
-    { name: "Amr Al Dab", image: AmrAlDabImage },
-    { name: "Atef Al Sharif", image: AtefAlSharifImage },
-    { name: "Ahmad Ezz Al Deen", image: AhmadEzzAlDeenImage },
-    { name: "Ahmad Muhammad Abu Ali", image: AhmadMuhammadAbuAliImage },
-    { name: "Ahmad Othman", image: AhmadOthmanImage },
-    { name: "Ahmad Radwan Mansi", image: AhmadRadwanMansiImage },
-    { name: "Amgad Baha Al Deen", image: AmgadBahaAlDeenImage },
-    { name: "Heba Al Nashraty", image: HebaAlNashratyImage },
-    { name: "Hosni Al Shami", image: HosniAlShamiImage },
-    { name: "Kareem Al marzouky", image: KareemAlMarzoukyImage },
-    { name: "Khaled Qendeel", image: KhaledQendeelImage },
-    { name: "Muhammad Shimees", image: MuhammadShimeesImage },
-    { name: "Shaimaa Bayoumi", image: ShaimaaBayoumiImage },
-    { name: "Tamer Karam", image: TamerKaramImage },
+    {
+      name: "Amr Al Dab",
+      image: AmrAlDabImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Atef Al Sharif",
+      image: AtefAlSharifImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Ahmad Ezz Al Deen",
+      image: AhmadEzzAlDeenImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Ahmad Muhammad Abu Ali",
+      image: AhmadMuhammadAbuAliImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Ahmad Othman",
+      image: AhmadOthmanImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Ahmad Radwan Mansi",
+      image: AhmadRadwanMansiImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Amgad Baha Al Deen",
+      image: AmgadBahaAlDeenImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Heba Al Nashraty",
+      image: HebaAlNashratyImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Hosni Al Shami",
+      image: HosniAlShamiImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Kareem Al marzouky",
+      image: KareemAlMarzoukyImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Khaled Qendeel",
+      image: KhaledQendeelImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Muhammad Shimees",
+      image: MuhammadShimeesImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Shaimaa Bayoumi",
+      image: ShaimaaBayoumiImage,
+      title: "Professor",
+      content: ``,
+    },
+    {
+      name: "Tamer Karam",
+      image: TamerKaramImage,
+      title: "Professor",
+      content: ``,
+    },
   ];
 
   return (
@@ -40,15 +113,9 @@ const OurTeam = () => {
       <div className="container flex flex-col gap-8 py-24">
         <div className="flex flex-col items-center gap-4 text-center">
           <div>
-            <h1 className="h1">Team</h1>
-            <h3 className="h3">Dedication. Expertise. Passion.</h3>
+            <h1 className="h1">{t("title")}</h1>
+            <h3 className="h3">{t("subtitle")}</h3>
           </div>
-          <p>
-            This is your Team section. It&apos;s a great place to introduce your
-            team and talk about what makes it special, such as your culture or
-            work philosophy. Don&apos;t be afraid to illustrate personality and
-            character to help users connect with your team.
-          </p>
         </div>
         <div className="grid items-center justify-center gap-4 lg:grid-cols-2">
           {members.map((member) => (
@@ -64,8 +131,10 @@ const OurTeam = () => {
                 />
               </div>
               <div className="flex flex-1 flex-col justify-between gap-2 p-4">
-                <small>Role</small>
-                <h3 className="text-lg">{member.name}</h3>
+                <div>
+                  <small>{member.title}</small>
+                  <h3 className="text-lg">{member.name}</h3>
+                </div>
                 <div className="flex flex-col">
                   <small>info@mysite.com</small>
                   <small>123-456-7890</small>
@@ -77,7 +146,12 @@ const OurTeam = () => {
                     </Button>
                   </DialogTrigger>
                   <DialogContent>
-                    <Profile name={member.name} image={member.image} />
+                    <Profile
+                      name={member.name}
+                      image={member.image}
+                      title={member.title}
+                      content={member.content}
+                    />
                   </DialogContent>
                 </Dialog>
               </div>

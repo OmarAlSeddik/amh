@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 const Blog = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
 
   return (
     <section>
@@ -13,7 +14,7 @@ const Blog = () => {
           <p>{t("blogContent")}</p>
         </div>
         <div>
-          <Link href="/what-we-do">
+          <Link href={`/${locale}/what-we-do`}>
             <Button
               variant="outline"
               className="w-40 border-black bg-transparent hover:border-primary hover:bg-primary hover:text-white"

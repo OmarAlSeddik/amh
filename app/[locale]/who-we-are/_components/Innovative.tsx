@@ -1,34 +1,37 @@
+import { useTranslations } from "next-intl";
+
 const Innovative = () => {
+  const t = useTranslations("WhoWeAre");
+
   return (
     <section className="bg-[url('../public/who-we-are/innovative-business-development.webp')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
       <div className="container flex h-full flex-col gap-8 py-24 md:flex-row">
         <div className="flex flex-1 flex-col gap-8">
-          <h2 className="h2">Innovative Business Development</h2>
+          <h2 className="h2">{t("innovativeBusinessDevelopment")}</h2>
           <div className="grid gap-8 lg:grid-cols-2">
-            <h2 className="h2 text-primary">Unmatched</h2>
+            <h2 className="h2 text-primary">{t("unmatched")}</h2>
             <div>
-              <h2 className="h2 text-primary">12+</h2>
-              <p>Market-Specific Solutions</p>
+              <h2 className="h2 text-primary">
+                {t("marketSpecificSolutionsCount")}
+              </h2>
+              <p>{t("marketSpecificSolutions")}</p>
             </div>
             <div>
-              <h2 className="h2 text-primary">2,500+</h2>
-              <p>Successful Client Engagements</p>
+              <h2 className="h2 text-primary">
+                {t("successfulClientEngagementsCount")}
+              </h2>
+              <p>{t("successfulClientEngagements")}</p>
             </div>
             <div>
-              <h2 className="h2 text-primary">98%</h2>
-              <p>Positive Client Feedback</p>
+              <h2 className="h2 text-primary">
+                {t("positiveClientFeedbackPercentage")}
+              </h2>
+              <p>{t("positiveClientFeedback")}</p>
             </div>
           </div>
         </div>
         <div className="flex flex-1 items-center justify-center">
-          <p>
-            At A.M.H we excel in providing innovative solutions tailored to meet
-            the needs of business development. Our seasoned experts bring
-            unparalleled insights and expertise, resulting in a proven track
-            record of successful client engagements. We are proud to receive
-            overwhelmingly positive feedback from our clients, reinforcing our
-            commitment to excellence.
-          </p>
+          <p>{t("innovativeDescription")}</p>
         </div>
       </div>
     </section>

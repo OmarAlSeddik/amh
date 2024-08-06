@@ -4,14 +4,17 @@ import IetosImage from "@/public/collaborators/ietos.webp";
 import SurUniversityCollegeImage from "@/public/collaborators/sur-university-college.webp";
 import UniversityCollegeOfGoizhaImage from "@/public/collaborators/university-college-of-goizha.webp";
 import WatanShippingCompanyImage from "@/public/collaborators/watan-shipping-company.webp";
+import { useTranslations } from "next-intl";
 
 import Image from "next/image";
 
 const Partners = () => {
+  const t = useTranslations("WhoWeAre");
+
   return (
     <section>
       <div className="container flex flex-col items-center gap-8 py-24">
-        <h2 className="h2">Trusted Collaborations</h2>
+        <h2 className="h2">{t("trustedCollaborations")}</h2>
         <div className="grid items-center gap-4 sm:grid-cols-2 md:grid-cols-3">
           <div className="flex size-48 items-center justify-center">
             <Image

@@ -2,317 +2,235 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
 import LogoImage from "@/public/logo.webp";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Field from "./Field";
 
 const Fields = () => {
+  const t = useTranslations("WhatWeDo");
+
   const fields = [
     {
-      name: "Training and Development Consultation",
+      name: t("trainingAndDevelopment"),
       image: LogoImage,
-      content: `
-      • Talent development is an essential part of any organization that aims 
-to achieve sustainable success and is no longer an add-on
-• As long as employees are the main driver of any organizational 
-performance, developing the competencies and skills of employees 
-gives organizations the competitive advantage they need to meet the 
-challenges of the present and the future .
-• Successful companies realize the importance of continuing to train 
-their employees to enable them to carry out their roles and 
-responsibilities more effectively. However, some companies provide 
-training and professional qualification to employees in isolation from 
-the actual needs of the company or the employee or those that bridge 
-the gap in their skills and experience .
-• Hence, the analysis of training needs has become a challenge facing 
-companies that want to excel to determine where there are skills 
-gaps, what training is required, and how to ensure that training 
-achieves the planned goals at the lowest possible cost and achieve 
-the best return on investment .
-• Education and development services include, but are not limited to:
-• Competency Gap Analysis
-• Development of building training curricula
-• experiential learning .
-• Practical workshops to develop personnel and systems .
-• Develop administrative and practical skills 
-      `,
+      content: (
+        <>
+          <ul className="list-disc">
+            <li>{t("trainingAndDevelopmentContent1")}</li>
+            <li>{t("trainingAndDevelopmentContent2")}</li>
+            <li>{t("trainingAndDevelopmentContent3")}</li>
+            <li>{t("trainingAndDevelopmentContent4")}</li>
+          </ul>
+          <p>{t("educationAndDevelopmentServices")}</p>
+          <ul className="list-disc">
+            <li>{t("competencyGapAnalysis")}</li>
+            <li>{t("trainingCurricula")}</li>
+            <li>{t("experientialLearning")}</li>
+            <li>{t("practicalWorkshops")}</li>
+            <li>{t("administrativeSkills")}</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Strategic Consultation",
+      name: t("strategicConsultation"),
       image: LogoImage,
-      content: `
-      • We provide our clients with strategic advice in all work activities, 
-starting from analyzing the internal elements of the organization and the 
-external elements affecting the performance of the institution
-• Determining the appropriate type of strategy for the organization and 
-defining the company's general goals, detailed goals and action plans 
-that achieve strategic, tactical and operational goals
-• We offer to provide our customers with innovative solutions that work 
-on developing the institution, raising performance and creating an added 
-value.
-• We work in cooperation with our clients to allocate resources effectively 
-in order to provide the best investment opportunities for our clients, 
-which improves institutional performance and improves the competitive 
-position
-• Management of multi-activities business and investment strategies
-      `,
+      content: (
+        <>
+          <ul className="list-disc">
+            <li>{t("strategicConsultationContent1")}</li>
+            <li>{t("strategicConsultationContent2")}</li>
+            <li>{t("strategicConsultationContent3")}</li>
+            <li>{t("strategicConsultationContent4")}</li>
+            <li>{t("strategicConsultationContent5")}</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Operations Research Consultation",
+      name: t("operationsResearch"),
       image: LogoImage,
-      content: `
-        Operations management is one of the main lists on which the
- company is based to achieve its goals, so we study the efficiency of
-the company&apos;s work systems and keep pace with the strategic and
- operational challenges it faces in various departments, and these
-services include, for example
- 
-Strategic planning using Development of programs
-Balanced Score card and operational plans 
- 
- Develop executive action plans Evaluate and develop institutional 
- Performance by Using 
- Competencies Management
- 
- Re-Engineering Process Analyze and Measure Productivity
- and Develop Strategies for its Development
- By using OEE Methodologies 
- 
- 
- Measure, analyze and control Waste analysis and elimination
- operating cost By using Lean manufacturing
- 
- Preparing the Operations Manual 
- (Operation Manual )
-      `,
+      content: (
+        <>
+          <p>{t("operationsResearchContent1")}</p>
+          <ul className="list-disc">
+            <li>{t("operationsResearchContent2")}</li>
+            <li>{t("operationsResearchContent3")}</li>
+            <li>{t("operationsResearchContent4")}</li>
+            <li>{t("operationsResearchContent5")}</li>
+            <li>{t("operationsResearchContent6")}</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Corporate Finance Consultation",
+      name: t("corporateFinance"),
       image: LogoImage,
-      content: `
-        We support our clients with a package of management consultancy services in the 
-field of financial management and help them overcome the financial obstacles they 
-may encounter by providing appropriate integrated solutions, after conducting 
-specialized studies in this regard, analyzing the company’s financial statements, 
-evaluating the work system in its various sectors, and how to manage its resources 
-on All levels, including contributing to identifying deficiencies in the work system 
-and developing appropriate ways to deal with them. These services include, for 
-example :
-• We assist our clients in planning and budgeting in order to help the company 
-implement the prevailing rules, regulations and laws
-• We collect data and information to prepare, advise and project accurate future 
-operations and financial plans
-• We analyze and interpret financial information to study multiple variables, 
-review them, and manage them, with the aim of facilitating the decision-making 
-process.
-• We work on complex projects, which require complex interpretation and 
-analysis.
-• We are working on the issuance of effective reports and the development of 
-operations, in line with established policies and regulations
-• We guide and advise on investments, asset rental, money saving, tax planning
-• We analyze the financial risks that the entrepreneurial business is likely to 
-undergo
-• We develop financial strategies, and direct the setting of goals
-• We monitor the economic situation based on monitoring changes in the budget
-      `,
+      content: (
+        <>
+          <p>{t("corporateFinanceContent1")}</p>
+          <ul className="list-disc">
+            <li>{t("corporateFinanceContent2")}</li>
+            <li>{t("corporateFinanceContent3")}</li>
+            <li>{t("corporateFinanceContent4")}</li>
+            <li>{t("corporateFinanceContent5")}</li>
+            <li>{t("corporateFinanceContent6")}</li>
+            <li>{t("corporateFinanceContent7")}</li>
+            <li>{t("corporateFinanceContent8")}</li>
+            <li>{t("corporateFinanceContent9")}</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Supply Chain Consultation",
+      name: t("supplyChain"),
       image: LogoImage,
-      content: `
-        We work to make our customers' supply chains a source of competitive advantage to 
-achieve short and long-term goals and fundamentally rethink traditional ways of working, 
-where the greatest threat is to overcome the disruptions to act with the logic of yesterday.
-We help customers build resilient, rapid and sustainable supply chains for the future. Our 
-results-based approach, market-leading technologies, and integration capabilities help you 
-develop your supply chain workflows, make decisions highly automated, and empower 
-your employees.
-We contribute to supporting our clients, partners of success, with a package of higher 
-management consultancy services in the field of supply chains and helping them to 
-overcome logistical obstacles that they may encounter by providing appropriate integrated 
-solutions, after conducting specialized studies in this regard, analyzing data for the 
-company, and evaluating the work system in its various sectors, And how to manage its 
-resources at all levels, which contributes to identifying deficiencies in the work system 
-and developing appropriate ways to deal with them. These services include, for example:
-.• Redesigning business policies and procedures.
-• Improving supply chain functionality.
-• Contracting, planning, warehousing and logistics.
-• Improving manufacturing and optimizing production capacities
-      `,
+      content: (
+        <>
+          <p>{t("supplyChainContent1")}</p>
+          <p>{t("supplyChainContent2")}</p>
+          <p>{t("supplyChainContent3")}</p>
+          <ul className="list-disc">
+            <li>{t("supplyChainContent4")}</li>
+            <li>{t("supplyChainContent5")}</li>
+            <li>{t("supplyChainContent6")}</li>
+            <li>{t("supplyChainContent7")}</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Corporate Governance Consultation",
+      name: t("corporateGovernance"),
       image: LogoImage,
-      content: `
-        Corporate governance is the rules, practices, and processes by which a 
-company is directed and controlled. Corporate governance basically involves 
-balancing the interests of the many stakeholders in a company, such as 
-shareholders, management, customers, suppliers, financiers, government, and 
-society.
-As corporate governance also provides a framework for achieving corporate 
-goals, it encompasses practically every area of management, from business 
-plans and internal controls to performance measurement and corporate 
-disclosure, we help our clients take a disciplined approach to governance and 
-compliance management through a range of assessments and process and 
-model improvement. Create, review and verify.
-Governance Consulting:
-• Building and implementing a corporate governance framework.
-• Building and implementing corporate governance manuals and procedures.
-• Building and implementing board committees and committees a.
-• Building and implementing the charters of board committees and board 
-committees.
-• Build and implement business & job controls roles.
-• Assisting the family or partners in building the family management system or 
-partner group agreement.
-We believe that human resources are the core and strength of any 
-business. By achieving excellence in human resource 
-management
-We help our clients achieve their strategic goals by establishing, 
-managing and developing a human resource function. These 
-services include, but are not limited to :
-• Organizational structure, restructuring and job description 
-for employees .
-• The system of attraction, selection and appointment .
-• Compensation and benefits system .
-• Managing, evaluating and evaluating performance
-• Building and consolidating the organization's culture and 
-core values .
-• Archiving of human resources and information technology 
-system .
-• HR systems, policies and procedures .
-• Strategic management of human resources
-Human resource
-      `,
+      content: (
+        <>
+          <p>{t("corporateGovernanceContent1")}</p>
+          <p>{t("corporateGovernanceContent2")}</p>
+          <p>{t("corporateGovernanceContent3")}</p>
+          <ul className="list-disc">
+            <li>{t("corporateGovernanceContent4")}</li>
+            <li>{t("corporateGovernanceContent5")}</li>
+            <li>{t("corporateGovernanceContent6")}</li>
+            <li>{t("corporateGovernanceContent7")}</li>
+            <li>{t("corporateGovernanceContent8")}</li>
+            <li>{t("corporateGovernanceContent9")}</li>
+          </ul>
+          <p>{t("governanceConsulting")}</p>
+          <ul className="list-disc">
+            <li>{t("governanceConsulting1")}</li>
+            <li>{t("governanceConsulting2")}</li>
+            <li>{t("governanceConsulting3")}</li>
+            <li>{t("governanceConsulting4")}</li>
+            <li>{t("governanceConsulting5")}</li>
+            <li>{t("governanceConsulting6")}</li>
+          </ul>
+          <p>{t("hrConsulting")}</p>
+          <ul className="list-disc">
+            <li>{t("hrConsulting1")}</li>
+            <li>{t("hrConsulting2")}</li>
+            <li>{t("hrConsulting3")}</li>
+            <li>{t("hrConsulting4")}</li>
+            <li>{t("hrConsulting5")}</li>
+            <li>{t("hrConsulting6")}</li>
+            <li>{t("hrConsulting7")}</li>
+            <li>{t("hrConsulting8")}</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Human Resources Consultation",
+      name: t("humanResources"),
       image: LogoImage,
-      content: `
-        Corporate governance is the rules, practices, and processes by which a 
-company is directed and controlled. Corporate governance basically involves 
-balancing the interests of the many stakeholders in a company, such as 
-shareholders, management, customers, suppliers, financiers, government, and 
-society.
-As corporate governance also provides a framework for achieving corporate 
-goals, it encompasses practically every area of management, from business 
-plans and internal controls to performance measurement and corporate 
-disclosure, we help our clients take a disciplined approach to governance and 
-compliance management through a range of assessments and process and 
-model improvement. Create, review and verify.
-Governance Consulting:
-• Building and implementing a corporate governance framework.
-• Building and implementing corporate governance manuals and procedures.
-• Building and implementing board committees and committees a.
-• Building and implementing the charters of board committees and board 
-committees.
-• Build and implement business & job controls roles.
-• Assisting the family or partners in building the family management system or 
-partner group agreement.
-We believe that human resources are the core and strength of any 
-business. By achieving excellence in human resource 
-management
-We help our clients achieve their strategic goals by establishing, 
-managing and developing a human resource function. These 
-services include, but are not limited to :
-• Organizational structure, restructuring and job description 
-for employees .
-• The system of attraction, selection and appointment .
-• Compensation and benefits system .
-• Managing, evaluating and evaluating performance
-• Building and consolidating the organization's culture and 
-core values .
-• Archiving of human resources and information technology 
-system .
-• HR systems, policies and procedures .
-• Strategic management of human resources
-Human resource
-        `,
+      content: (
+        <>
+          <p>{t("humanResourcesContent1")}</p>
+          <p>{t("humanResourcesContent2")}</p>
+          <p>{t("humanResourcesContent3")}</p>
+          <ul className="list-disc">
+            <li>{t("humanResourcesContent4")}</li>
+            <li>{t("humanResourcesContent5")}</li>
+            <li>{t("humanResourcesContent6")}</li>
+            <li>{t("humanResourcesContent7")}</li>
+            <li>{t("humanResourcesContent8")}</li>
+            <li>{t("humanResourcesContent9")}</li>
+            <li>{t("humanResourcesContent10")}</li>
+            <li>{t("humanResourcesContent11")}</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Digital Transformational Consultation",
+      name: t("digitalTransformation"),
       image: LogoImage,
-      content: `
-        • The speed of changes surrounding the business environment 
-requires business entities to find a way to obtain information 
-in a timely manner, as mechanization and digital 
-transformation are the way to do more work with less effort 
-and money and achieve better results.
-• What is the added value to business entities of digital 
-transformation consultancy?
-- Achieving a competitive advantage.
-- Reaching excellence in performance, increasing 
-productivity and reducing errors.
-- Achieving more efficiency, transparency and insight 
-into the business entity.
-- Cost reduction.
-• The services we provide for example:
-- Automation of any system such as accounting systems, 
-customer relationship management and enterprise 
-resource planning
-- Cloud Computing
-- Design of virtual systems
-- Design of data centers
-      `,
+      content: (
+        <>
+          <ul className="list-disc">
+            <li>{t("digitalTransformationContent1")}</li>
+            <li>{t("digitalTransformationContent2")}</li>
+            <ul className="list-disc">
+              <li>{t("digitalTransformationContent3")}</li>
+              <li>{t("digitalTransformationContent4")}</li>
+              <li>{t("digitalTransformationContent5")}</li>
+              <li>{t("digitalTransformationContent6")}</li>
+            </ul>
+            <li>{t("digitalTransformationContent7")}</li>
+            <ul className="list-disc">
+              <li>{t("digitalTransformationContent8")}</li>
+              <li>{t("digitalTransformationContent9")}</li>
+              <li>{t("digitalTransformationContent10")}</li>
+              <li>{t("digitalTransformationContent11")}</li>
+            </ul>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Sales and Marketing Consultation",
+      name: t("salesAndMarketing"),
       image: LogoImage,
-      content: `
-      • Our consultants will provide a set of consultations, which includes a 
-comprehensive study of the company to understand all its advantages and 
-disadvantages, as well as understand the possibilities and opportunities 
-available, as well as provide marketing and sales management services 
-for the product, and provide the appropriate marketing method
-• In addition to providing services to solve the most important obstacles 
-and major obstacles faced by customers, their companies and their 
-products in the field of marketing, it also provides advertising campaigns 
-and advertising campaigns to stimulate the sales trends of their 
-companies or activities
-• The services we provide for example :
-• Strategic Consultations for Marketing Management .
-• Consultations for the design and development of marketing and sales 
-management systems .
-• Consulting for the development and restructuring of the sales department .
-• Consultations for converting the traditional marketing management into a 
-CRM customer relationship management system .
-• Digital and electronic marketing consultancy .
-• Marketing research consultancy .
-• Consultations for the design and implementation of advertising and 
-promotional campaigns for companies .
-• Consultations to convert the traditional systems of marketing and sales to 
-modern cloud computing systems . 
-        `,
+      content: (
+        <>
+          <ul className="list-disc">
+            <li>{t("salesAndMarketingContent1")}</li>
+            <li>{t("salesAndMarketingContent2")}</li>
+            <li>{t("salesAndMarketingContent3")}</li>
+            <ul className="list-disc">
+              <li>{t("salesAndMarketingContent4")}</li>
+              <li>{t("salesAndMarketingContent5")}</li>
+              <li>{t("salesAndMarketingContent6")}</li>
+              <li>{t("salesAndMarketingContent7")}</li>
+              <li>{t("salesAndMarketingContent8")}</li>
+              <li>{t("salesAndMarketingContent9")}</li>
+              <li>{t("salesAndMarketingContent10")}</li>
+            </ul>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Safety and Health Consultation",
+      name: t("safetyAndHealth"),
       image: LogoImage,
-      content: `
-        The development and complexity of the business environment requires 
-the presence of modern systems to prevent the occurrence of any risks or 
-accidents that lead to the loss of any of the company&apos;s assets and stop the 
-wheel of production .
-Therefore, we work to provide the best solutions in the field of 
-occupational safety and health through:
-• Study the work environment and determine the gap between what 
-should be and what is
-• Determine occupational safety and health policies and procedures
-• Design safe work systems
-• Applying the latest specifications for occupational safety and 
-health systems
-• Applying the latest specifications for environmental systems
-• Determine the work&apos;s needs for occupational safety and health 
-methods
-• Establishing systems for evacuation and emergency procedures
-• Training scientists on the use of occupational safety and health 
-methods
-    `,
+      content: (
+        <>
+          <p>{t("safetyAndHealthContent1")}</p>
+          <p>{t("safetyAndHealthContent2")}</p>
+          <ul className="list-disc">
+            <li>{t("safetyAndHealthContent3")}</li>
+            <li>{t("safetyAndHealthContent4")}</li>
+            <li>{t("safetyAndHealthContent5")}</li>
+            <li>{t("safetyAndHealthContent6")}</li>
+            <li>{t("safetyAndHealthContent7")}</li>
+            <li>{t("safetyAndHealthContent8")}</li>
+          </ul>
+        </>
+      ),
     },
   ];
 
   return (
     <section>
       <div className="flex flex-col gap-4 bg-[#191919] py-12 text-center text-white">
-        <h2 className="h1">Our Fields</h2>
-        <h3 className="h3">Unlock Your true Business Potential</h3>
+        <h2 className="h1">{t("ourFieldsTitle")}</h2>
+        <h3 className="h3">{t("unlockPotential")}</h3>
       </div>
       <div className="grid gap-4 p-4 md:grid-cols-2 xl:grid-cols-3">
         {fields.map((field) => (
@@ -327,7 +245,7 @@ methods
               <Separator />
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="w-40">Learn More</Button>
+                  <Button className="w-40">{t("learnMore")}</Button>
                 </DialogTrigger>
                 <DialogContent>
                   <Field

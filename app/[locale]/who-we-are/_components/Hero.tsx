@@ -1,23 +1,18 @@
 import { Separator } from "@/components/ui/separator";
 import HeroImage from "@/public/who-we-are/hero.webp";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const Hero = () => {
+  const t = useTranslations("WhoWeAre");
+
   return (
     <section className="flex justify-center bg-[#191919] text-white">
       <div className="flex flex-1 justify-center p-24">
         <div className="flex max-w-[40rem] flex-col gap-4">
-          <h1 className="h1">Empowering Business Development Excellence</h1>
+          <h1 className="h1">{t("heroTitle")}</h1>
           <Separator />
-          <p>
-            at A.M.H. involves leveraging strategic insights and fostering
-            innovation to propel growth and success. Through tailored
-            strategies, market expertise, and proactive solutions, we empower
-            businesses to navigate challenges, seize opportunities, and achieve
-            sustainable expansion. At A.M.H., we are dedicated to providing the
-            tools and support necessary to elevate your business development
-            efforts and drive impactful results in today&apos;s dynamic market
-          </p>
+          <p>{t("heroDescription")}</p>
         </div>
       </div>
       <Image

@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { Questrial as FontSans } from "next/font/google";
 import React from "react";
 import "../globals.css";
@@ -14,12 +13,6 @@ const fontSans = FontSans({
   weight: "400",
 });
 
-export const metadata: Metadata = {
-  title: "AMH Developments",
-  description:
-    "Your destination for exceptional Business Development solutions.",
-};
-
 export default async function RootLayout({
   children,
   params: { locale },
@@ -28,6 +21,7 @@ export default async function RootLayout({
   params: { locale: "ar" | "en" };
 }>) {
   const messages = await getMessages();
+  console.log(locale);
 
   return (
     <html lang={locale}>
@@ -36,6 +30,7 @@ export default async function RootLayout({
           "bg-background font-sans antialiase text-pretty",
           fontSans.variable
         )}
+        dir={locale === "ar" ? "rtl" : "ltr"}
       >
         <NextIntlClientProvider messages={messages}>
           <Header />
@@ -45,4 +40,17 @@ export default async function RootLayout({
       </body>
     </html>
   );
+}
+
+export async function generateMetaData({
+  params: { locale },
+}: {
+  params: { locale: "ar" | "en" };
+}) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
 }

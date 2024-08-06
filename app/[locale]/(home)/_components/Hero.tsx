@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 const Hero = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
 
   return (
     <section className="bg-[url('../public/home/hero.webp')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
@@ -17,7 +18,7 @@ const Hero = () => {
             {t("title2")}
           </h1>
           <h3 className="h3">{t("subtitle")}</h3>
-          <Link href="/what-we-do">
+          <Link href={`/${locale}/what-we-do`}>
             <Button
               variant="outline"
               className="w-40 bg-transparent text-white hover:bg-white"

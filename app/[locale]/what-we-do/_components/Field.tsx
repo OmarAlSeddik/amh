@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { DialogClose } from "@/components/ui/dialog";
+import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
+import { ReactElement } from "react";
 
 const Field = ({
   name,
@@ -9,17 +11,19 @@ const Field = ({
 }: {
   name: string;
   image: StaticImageData;
-  content: string;
+  content: ReactElement;
 }) => {
+  const t = useTranslations("WhatWeDo");
+
   return (
     <div className="flex flex-col gap-8 bg-black px-10 py-20 text-white sm:flex-row">
       <Image src={image} alt={name} className="size-64 rounded object-cover" />
       <div className="flex flex-1 flex-col gap-4">
         <h3 className="h3">{name}</h3>
-        <p>{content}</p>
+        <div className="flex flex-col gap-4">{content}</div>
         <DialogClose asChild>
           <Button className="mt-auto w-40 bg-white hover:text-white">
-            Go Back
+            {t("goBack")}
           </Button>
         </DialogClose>
       </div>

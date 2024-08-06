@@ -8,8 +8,6 @@ const Footer = () => {
   const t = useTranslations("Footer");
   const locale = useLocale();
 
-  console.log(locale);
-
   return (
     <footer className="bg-black text-white">
       <div className="container flex flex-col justify-between gap-4 py-12 sm:flex-row sm:items-center">
@@ -20,12 +18,12 @@ const Footer = () => {
             className="size-28 rounded-full sm:size-36"
           />
           <p className="h3">{t("message")}</p>
-          <Link href={`${locale}/contact-us`}>
+          <Link href={`/${locale}/contact-us`}>
             <Button
               variant="outline"
               className="w-40 bg-transparent text-white hover:bg-white"
             >
-              Contact Us
+              {t("contactUs")}
             </Button>
           </Link>
         </div>
