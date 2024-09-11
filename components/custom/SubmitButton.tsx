@@ -35,7 +35,7 @@ const SubmitButton = ({
           className={cn("flex gap-2", className)}
         >
           <Loader2 className="size-4 animate-spin" />
-          <span>t{t("pending")}</span>
+          <span>{t("pending")}</span>
         </Button>
       ) : (
         <Button

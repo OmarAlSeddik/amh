@@ -14,7 +14,7 @@ export async function POST(request: any) {
   const mailOptions = {
     from: email,
     to: "omaralseddik@gmail.com",
-    subject: `Message from ${firstName} ${lastName}, phone: ${phone ?? "None"}`,
+    subject: `AMH Contact Form (Email: ${email} | Name: ${firstName} ${lastName} | Phone: ${phone ?? "None"})`,
     text: message,
   };
 
