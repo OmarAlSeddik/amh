@@ -94,7 +94,6 @@ const OurTeam = () => {
             <div key={member.id} className="flex flex-col bg-[#191919] text-white sm:flex-row">
               <div className="flex w-full justify-center p-4 sm:w-auto sm:justify-start sm:p-0">
                 <Image
-                  placeholder="blur"
                   sizes="100vw"
                   quality={50}
                   placeholder="blur"

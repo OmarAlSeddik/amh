@@ -18,7 +18,6 @@ const Field = ({
   return (
     <div className="flex flex-col gap-8 bg-black px-10 py-20 text-white sm:flex-row">
       <Image
-        placeholder="blur"
         sizes="100vw"
         quality={50}
         placeholder="blur"

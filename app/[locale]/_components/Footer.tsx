@@ -13,7 +13,6 @@ const Footer = () => {
       <div className="container flex flex-col justify-between gap-4 py-12 sm:flex-row sm:items-center">
         <div className="flex flex-col items-center gap-2">
           <Image
-            placeholder="blur"
             sizes="100vw"
             quality={50}
             placeholder="blur"
