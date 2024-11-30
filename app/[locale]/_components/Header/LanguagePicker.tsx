@@ -19,7 +19,7 @@ const LanguagePicker = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="transition-all hover:text-primary">
-        <Button aria-label="Change Language">
+        <Button aria-label="Change Language" className="hover:text-black">
           <Globe />
         </Button>
       </DropdownMenuTrigger>

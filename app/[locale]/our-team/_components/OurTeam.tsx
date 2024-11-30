@@ -91,7 +91,10 @@ const OurTeam = () => {
         </div>
         <div className="grid items-center justify-center gap-4 lg:grid-cols-2">
           {members.map((member) => (
-            <div key={member.id} className="flex flex-col bg-[#191919] text-white sm:flex-row">
+            <div
+              key={member.id}
+              className="flex flex-col rounded bg-[#191919] text-white sm:flex-row"
+            >
               <div className="flex w-full justify-center p-4 sm:w-auto sm:justify-start sm:p-0">
                 <Image
                   sizes="100vw"
@@ -99,10 +102,10 @@ const OurTeam = () => {
                   placeholder="blur"
                   src={member.image}
                   alt={t(`members.${member.id}.name`)}
-                  className="size-48 object-cover"
+                  className="size-48 rounded object-cover"
                 />
               </div>
-              <div className="flex flex-1 flex-col justify-between gap-2 p-4">
+              <div className="flex flex-1 flex-col items-center justify-between gap-2 p-4 text-center sm:items-start sm:text-start">
                 <div>
                   <small>{t(`members.${member.id}.title`)}</small>
                   <h3 className="text-lg">{t(`members.${member.id}.name`)}</h3>

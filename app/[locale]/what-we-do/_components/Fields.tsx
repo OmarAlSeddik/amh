@@ -244,13 +244,13 @@ const Fields = () => {
       </div>
       <div className="grid gap-4 p-4 md:grid-cols-2 xl:grid-cols-3">
         {fields.map((field) => (
-          <div key={field.name} className="flex flex-col border">
+          <div key={field.name} className="flex flex-col rounded border">
             <Image
               quality={50}
               placeholder="blur"
               src={field.image}
               alt={field.name}
-              className="h-[30rem] w-full object-cover"
+              className="h-[30rem] w-full rounded object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className="flex flex-col gap-4 p-8">

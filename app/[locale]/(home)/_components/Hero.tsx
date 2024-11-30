@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import HeroImage from "@/public/home/hero.webp";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import SubscriptionForm from "./SubscriptionForm";
 
 const Hero = () => {
   const t = useTranslations("Home");
@@ -38,20 +37,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col gap-4 self-end">
           <h2>{t("subscribe")}</h2>
-          <div className="flex flex-col gap-1">
-            <Label htmlFor="email" className="text-xs">
-              {t("enterEmail")}
-            </Label>
-            <div className="flex">
-              <Input
-                placeholder={t("enterEmail")}
-                className="border-primary bg-transparent text-white placeholder:text-white"
-                id="email"
-              />
-              <Button>{t("subscribeButton")}</Button>
-            </div>
-            <span className="text-xs">{t("thankYou")}</span>
-          </div>
+          <SubscriptionForm />
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@ const Vision = () => {
         alt="Our Vision"
         className="absolute z-[-2] size-full object-cover lg:block"
       />
-      <div className="flex flex-col items-center gap-8 bg-black p-8 text-center">
+      <div className="flex flex-col items-center gap-8 rounded bg-black p-8 text-center">
         <h2 className="h2">{t("visionTitle")}</h2>
         <p>{t("visionDescription")}1</p>
         <Link href={`/${locale}/`}>
