@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+import AboutImage from "@/public/home/about.webp";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
@@ -7,7 +9,16 @@ const About = () => {
   const locale = useLocale();
 
   return (
-    <section className="bg-[url('../public/home/about.webp')] bg-cover bg-center text-white shadow-[inset_0_9999px_rgba(0,0,0,0.75)]">
+    <section className="relative text-white">
+      <div className="absolute inset-0 z-[-1] bg-black opacity-75" />
+      <Image
+        placeholder="blur"
+        sizes="100vw"
+        quality={50}
+        src={AboutImage}
+        alt="About"
+        className="absolute z-[-2] size-full object-cover lg:block"
+      />
       <div className="container flex h-full flex-col gap-64 py-24">
         <div className="flex flex-col gap-4 self-start">
           <h2 className="h2">

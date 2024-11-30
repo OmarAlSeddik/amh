@@ -13,9 +13,12 @@ const Header = () => {
     <header className="relative z-50 flex items-center justify-between bg-black px-8 py-4 text-white">
       <Link href={`/${locale}/`}>
         <Image
+          sizes="100vw"
+          quality={50}
+          placeholder="blur"
           src={Logo}
           alt="AMH"
-          className="size-16 rounded-full sm:size-20"
+          className="w-16 rounded object-cover sm:w-20"
           priority
         />
       </Link>

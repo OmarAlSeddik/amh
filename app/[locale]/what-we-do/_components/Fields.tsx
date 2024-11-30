@@ -246,9 +246,12 @@ const Fields = () => {
         {fields.map((field) => (
           <div key={field.name} className="flex flex-col border">
             <Image
+              quality={50}
+              placeholder="blur"
               src={field.image}
               alt={field.name}
               className="h-[30rem] w-full object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className="flex flex-col gap-4 p-8">
               <h3 className="h3">{field.name}</h3>
@@ -258,11 +261,7 @@ const Fields = () => {
                   <Button className="w-40">{t("learnMore")}</Button>
                 </DialogTrigger>
                 <DialogContent>
-                  <Field
-                    name={field.name}
-                    image={field.image}
-                    content={field.content}
-                  />
+                  <Field name={field.name} image={field.image} content={field.content} />
                 </DialogContent>
               </Dialog>
             </div>

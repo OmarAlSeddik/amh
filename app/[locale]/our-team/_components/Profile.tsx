@@ -18,7 +18,15 @@ const Profile = ({
 
   return (
     <div className="flex flex-col gap-8 bg-black px-10 py-20 text-white sm:flex-row">
-      <Image src={image} alt={name} className="size-64 rounded object-cover" />
+      <Image
+        placeholder="blur"
+        sizes="100vw"
+        quality={50}
+        placeholder="blur"
+        src={image}
+        alt={name}
+        className="size-64 rounded object-cover"
+      />
       <div className="flex flex-1 flex-col gap-4">
         <div>
           <p>{title}</p>
@@ -26,9 +34,7 @@ const Profile = ({
         </div>
         <p>{content}</p>
         <DialogClose asChild>
-          <Button className="mt-auto w-40 bg-white hover:text-white">
-            {t("goBack")}
-          </Button>
+          <Button className="mt-auto w-40 bg-white hover:text-white">{t("goBack")}</Button>
         </DialogClose>
       </div>
     </div>

@@ -13,16 +13,17 @@ const Footer = () => {
       <div className="container flex flex-col justify-between gap-4 py-12 sm:flex-row sm:items-center">
         <div className="flex flex-col items-center gap-2">
           <Image
+            placeholder="blur"
+            sizes="100vw"
+            quality={50}
+            placeholder="blur"
             src={Logo}
             alt="AMH"
             className="size-28 rounded-full sm:size-36"
           />
           <p className="h3">{t("message")}</p>
           <Link href={`/${locale}/contact-us`}>
-            <Button
-              variant="outline"
-              className="w-40 bg-transparent text-white hover:bg-white"
-            >
+            <Button variant="outline" className="w-40 bg-transparent text-white hover:bg-white">
               {t("contactUs")}
             </Button>
           </Link>

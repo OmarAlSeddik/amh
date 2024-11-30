@@ -18,30 +18,61 @@ const Partners = () => {
         <div className="grid items-center gap-4 sm:grid-cols-2 md:grid-cols-3">
           <div className="flex size-48 items-center justify-center">
             <Image
+              placeholder="blur"
+              sizes="100vw"
+              quality={50}
+              placeholder="blur"
               src={AgricalturalBankOfEgyptImage}
               alt="Agricaltural Bank of Egypt"
             />
           </div>
           <div className="flex size-48 items-center justify-center">
-            <Image src={HamdiShomanImage} alt="Hamdi Shoman" />
-          </div>
-          <div className="flex size-48 items-center justify-center">
-            <Image src={IetosImage} alt="Ietos" className="object-cover" />
+            <Image
+              placeholder="blur"
+              sizes="100vw"
+              quality={50}
+              placeholder="blur"
+              src={HamdiShomanImage}
+              alt="Hamdi Shoman"
+            />
           </div>
           <div className="flex size-48 items-center justify-center">
             <Image
+              placeholder="blur"
+              sizes="100vw"
+              quality={50}
+              placeholder="blur"
+              src={IetosImage}
+              alt="Ietos"
+              className="object-cover"
+            />
+          </div>
+          <div className="flex size-48 items-center justify-center">
+            <Image
+              placeholder="blur"
+              sizes="100vw"
+              quality={50}
+              placeholder="blur"
               src={SurUniversityCollegeImage}
               alt="Sur University College"
             />
           </div>
           <div className="flex size-48 items-center justify-center">
             <Image
+              placeholder="blur"
+              sizes="100vw"
+              quality={50}
+              placeholder="blur"
               src={UniversityCollegeOfGoizhaImage}
               alt="University College of Goizha"
             />
           </div>
           <div className="flex size-48 items-center justify-center">
             <Image
+              placeholder="blur"
+              sizes="100vw"
+              quality={50}
+              placeholder="blur"
               src={WatanShippingCompanyImage}
               alt="Watan Shipping Company"
             />

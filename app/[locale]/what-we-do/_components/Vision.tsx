@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+import OurVisionImage from "@/public/what-we-do/our-vision.webp";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 
 const Vision = () => {
@@ -7,7 +9,16 @@ const Vision = () => {
   const locale = useLocale();
 
   return (
-    <section className="flex items-center justify-center bg-[url('../public/what-we-do/our-vision.webp')] bg-cover bg-center py-24 text-white shadow-[inset_0_9999px_rgba(0,0,0,0)]">
+    <section className="relative flex items-center justify-center py-24 text-white">
+      <div className="absolute inset-0 z-[-1] bg-black opacity-75" />
+      <Image
+        placeholder="blur"
+        sizes="100vw"
+        quality={50}
+        src={OurVisionImage}
+        alt="Our Vision"
+        className="absolute z-[-2] size-full object-cover lg:block"
+      />
       <div className="flex flex-col items-center gap-8 bg-black p-8 text-center">
         <h2 className="h2">{t("visionTitle")}</h2>
         <p>{t("visionDescription")}1</p>

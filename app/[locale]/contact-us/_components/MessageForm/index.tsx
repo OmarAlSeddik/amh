@@ -1,12 +1,6 @@
 "use client";
 import SubmitButton from "@/components/custom/SubmitButton";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-} from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
@@ -175,6 +169,10 @@ const MessageForm = () => {
           </div>
         </div>
         <Image
+          priority
+          sizes="100vw"
+          quality={50}
+          placeholder="blur"
           src={MessageFormImage}
           alt="Message Form"
           className="hidden w-1/2 flex-1 object-cover lg:block"

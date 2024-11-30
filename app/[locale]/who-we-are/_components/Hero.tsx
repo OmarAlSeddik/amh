@@ -16,6 +16,10 @@ const Hero = () => {
         </div>
       </div>
       <Image
+        priority
+        sizes="100vw"
+        quality={50}
+        placeholder="blur"
         src={HeroImage}
         alt="Business Man"
         className="hidden w-1/2 flex-1 object-cover lg:block"

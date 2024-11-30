@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,8 +18,10 @@ const LanguagePicker = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="transition-all hover:text-primary">
-        <Globe />
+      <DropdownMenuTrigger asChild className="transition-all hover:text-primary">
+        <Button aria-label="Change Language">
+          <Globe />
+        </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuItem
