@@ -1,17 +1,19 @@
+import localFont from "next/font/local";
+
 import { cn } from "@/lib/utils";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
-import { Questrial as FontSans } from "next/font/google";
+import { getMessages } from "next-intl/server";
 import React from "react";
 import "../globals.css";
 import Footer from "./_components/Footer";
 import Header from "./_components/Header";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  weight: "400",
-});
+const QuestrialRegular = localFont({ src: "../fonts/Questrial-Regular.ttf" });
+
+export const metadata = {
+  title: "AMH",
+  description: "AMH for Business Development",
+};
 
 export default async function RootLayout({
   children,
@@ -25,10 +27,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={cn(
-          "bg-background font-sans antialiase text-pretty",
-          fontSans.variable
-        )}
+        className={cn("bg-background antialiase text-pretty", QuestrialRegular.className)}
         dir={locale === "ar" ? "rtl" : "ltr"}
       >
         <NextIntlClientProvider messages={messages}>
@@ -39,17 +38,4 @@ export default async function RootLayout({
       </body>
     </html>
   );
-}
-
-export async function generateMetaData({
-  params: { locale },
-}: {
-  params: { locale: "ar" | "en" };
-}) {
-  const t = await getTranslations({ locale, namespace: "Metadata" });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
 }

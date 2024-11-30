@@ -14,8 +14,8 @@ const Hero = () => {
     <section className="relative w-full text-white">
       <div className="absolute inset-0 z-[-1] bg-black opacity-75" />
       <Image
-        placeholder="blur"
         priority
+        placeholder="blur"
         sizes="100vw"
         quality={50}
         src={HeroImage}

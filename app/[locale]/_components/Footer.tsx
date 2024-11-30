@@ -18,7 +18,8 @@ const Footer = () => {
             placeholder="blur"
             src={Logo}
             alt="AMH"
-            className="size-28 rounded-full sm:size-36"
+            className="w-28 rounded object-cover sm:w-36"
+            priority
           />
           <p className="h3">{t("message")}</p>
           <Link href={`/${locale}/contact-us`}>
